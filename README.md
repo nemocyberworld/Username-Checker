@@ -22,7 +22,7 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/YOURUSERNAME/username-checker.git
+git clone https://github.com/nemocyberworld/username-checker.git
 cd username-checker
 pip install -r requirements.txt
 ```
