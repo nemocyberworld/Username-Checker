@@ -1,5 +1,5 @@
 
-# username-checker
+# Username Checker
 
 **Fast username enumeration across many sites — with concurrency, retries, proxies, and evidence-based verification.**
 
