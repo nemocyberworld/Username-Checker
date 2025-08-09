@@ -1,0 +1,4427 @@
+- name: Facebook
+  url: https://facebook.com/{!!}
+- name: GitHub
+  url: https://github.com/{!!}
+  evidence_regex:
+    - '"og:title"'
+- '"user-profile"'  # loose fallback
+- name: GitLab
+  url: https://gitlab.com/{!!}
+- name: BitBucket
+  url: https://bitbucket.org/{!!}
+- name: YouTube
+  url: https://www.youtube.com/@{!!}
+- name: Instagram
+  url: https://instagram.com/{!!}
+- name: Medium
+  url: https://medium.com/@{!!}
+- name: Pastebin
+  url: https://pastebin.com/u/@{!!}
+- name: Quora
+  url: https://quora.com/profile/{!!}
+- name: Flickr
+  url: https://flickr.com/people/{!!}
+- name: WordPress
+  url: https://{!!}.wordpress.com
+- name: Pinterest
+  url: https://pinterest.com/{!!}
+- name: VK
+  url: https://vk.com/{!!}
+- name: Wikipedia
+  url: https://en.wikipedia.org/wiki/User:{!!}
+- name: about.me
+  url: https://about.me/{!!}
+- name: Vimeo
+  url: https://vimeo.com/{!!}
+- name: Patreon
+  url: https://patreon.com/{!!}
+- name: Reddit
+  url: https://www.reddit.com/user/{!!}/
+- name: Docker Hub
+  url: https://hub.docker.com/u/{!!}
+- name: Twitter
+  url: https://twitter.com/{!!}
+- name: Steam
+  url: https://steamcommunity.com/id/{!!}
+- name: TikTok
+  url: https://www.tiktok.com/@{!!}
+- name: Twitch
+  url: https://www.twitch.tv/{!!}
+- name: PayPal
+  url: https://paypal.me/{!!}
+- name: LinkedIn
+  url: https://www.linkedin.com/in/{!!}
+- name: Dev.to
+  url: https://dev.to/{!!}
+- name: Keybase
+  url: https://keybase.io/{!!}
+- name: HackerOne
+  url: https://hackerone.com/{!!}
+- name: Bugcrowd
+  url: https://bugcrowd.com/{!!}
+- name: Replit
+  url: https://replit.com/@{!!}
+- name: CodePen
+  url: https://codepen.io/{!!}
+- name: Kaggle
+  url: https://www.kaggle.com/{!!}
+- name: ProductHunt
+  url: https://www.producthunt.com/@{!!}
+- name: Dribbble
+  url: https://dribbble.com/{!!}
+- name: Behance
+  url: https://www.behance.net/{!!}
+- name: SoundCloud
+  url: https://soundcloud.com/{!!}
+- name: Bandcamp
+  url: https://{!!}.bandcamp.com
+- name: Slideshare
+  url: https://www.slideshare.net/{!!}
+- name: Goodreads
+  url: https://www.goodreads.com/{!!}
+- name: MyAnimeList
+  url: https://myanimelist.net/profile/{!!}
+- name: Last.fm
+  url: https://www.last.fm/user/{!!}
+- name: Archive.org
+  url: https://archive.org/details/@{!!}
+- name: Strava
+  url: https://www.strava.com/athletes/{!!}
+- name: Unsplash
+  url: https://unsplash.com/@{!!}
+- name: 500px
+  url: https://500px.com/{!!}
+- name: Gravatar
+  url: https://en.gravatar.com/{!!}
+- name: Foursquare
+  url: https://foursquare.com/{!!}
+- name: Gumroad
+  url: https://gumroad.com/{!!}
+- name: Discogs
+  url: https://www.discogs.com/user/{!!}
+- name: Rumble
+  url: https://rumble.com/user/{!!}
+# Dating Sites
+- name: Tinder
+  url: https://tinder.com/@{!!}
+- name: Bumble
+  url: https://bumble.com/en/@{!!}
+- name: OkCupid
+  url: https://www.okcupid.com/profile/{!!}
+- name: Plenty of Fish
+  url: https://www.pof.com/viewprofile.aspx?username={!!}
+- name: Match.com
+  url: https://www.match.com/profile/{!!}
+- name: Hinge
+  url: https://hinge.co/@{!!}
+- name: eHarmony
+  url: https://www.eharmony.com/@{!!}
+- name: Coffee Meets Bagel
+  url: https://coffeemeetsbagel.com/@{!!}
+- name: Badoo
+  url: https://badoo.com/profile/{!!}
+- name: Zoosk
+  url: https://www.zoosk.com/profile/{!!}
+# Adult / Porn Sites
+- name: Pornhub
+  url: https://www.pornhub.com/users/{!!}
+- name: XVideos
+  url: https://www.xvideos.com/profiles/{!!}
+- name: XHamster
+  url: https://xhamster.com/users/{!!}
+- name: OnlyFans
+  url: https://onlyfans.com/{!!}
+- name: Fansly
+  url: https://fansly.com/{!!}
+- name: ManyVids
+  url: https://www.manyvids.com/Profile/{!!}
+- name: Chaturbate
+  url: https://chaturbate.com/{!!}
+- name: MyFreeCams
+  url: https://profiles.myfreecams.com/{!!}
+- name: CamSoda
+  url: https://www.camsoda.com/{!!}
+- name: Fapster
+  url: https://fapster.xxx/profile/{!!}
+# Mainstream Global Platforms
+- name: WhatsApp
+  url: https://api.whatsapp.com/send?phone={!!}
+- name: Telegram
+  url: https://t.me/{!!}
+- name: Snapchat
+  url: https://www.snapchat.com/add/{!!}
+- name: Tumblr
+  url: https://{!!}.tumblr.com
+- name: Discord
+  url: https://discord.com/users/{!!}
+- name: Sina Weibo
+  url: https://weibo.com/{!!}
+- name: QQ
+  url: https://qzone.qq.com/{!!}
+- name: WeChat
+  url: https://www.wechat.com/{!!}
+- name: WhatsApp Web
+  url: https://web.whatsapp.com/send?phone={!!}
+- name: Messenger
+  url: https://www.messenger.com/t/{!!}
+- name: "X (formerly Twitter - alt)"
+  url: https://x.com/{!!}
+# Video Platforms
+- name: "TikTok Douyin (China)"
+  url: https://www.douyin.com/{!!}
+- name: Kuaishou
+  url: https://www.kuaishou.com/{!!}
+- name: Dailymotion
+  url: https://www.dailymotion.com/{!!}
+- name: Bilibili
+  url: https://space.bilibili.com/{!!}
+- name: Vevo
+  url: https://www.vevo.com/artist/{!!}
+# Developer / Tech Communities
+- name: Stack Overflow
+  url: https://stackoverflow.com/users/{!!}
+# Forums & Q&A
+- name: "Reddit (alt)"
+  url: https://www.reddit.com/u/{!!}
+- name: StackExchange
+  url: https://stackexchange.com/users/{!!}
+- name: Answerbag
+  url: https://www.answerbag.com/q/profile/{!!}
+- name: "Stackoverflow (meta)"
+  url: https://meta.stackoverflow.com/users/{!!}
+- name: Superuser
+  url: https://superuser.com/users/{!!}
+- name: Server Fault
+  url: https://serverfault.com/users/{!!}
+- name: "Superuser (another)"
+  url: https://superuser.com/users/{!!}
+- name: Raspberry Pi StackExchange
+  url: https://raspberrypi.stackexchange.com/users/{!!}
+- name: AskUbuntu
+  url: https://askubuntu.com/users/{!!}
+# Content & Media Sharing
+- name: Mixcloud
+  url: https://mixcloud.com/{!!}
+- name: DeviantArt
+  url: https://www.deviantart.com/{!!}
+- name: Scribd
+  url: https://www.scribd.com/user/{!!}
+# Lifestyle, Fitness & Health
+- name: Runkeeper
+  url: https://runkeeper.com/user/{!!}
+- name: MyFitnessPal
+  url: https://www.myfitnesspal.com/{!!}
+- name: "Fitbit (public profiles)"
+  url: https://www.fitbit.com/user/{!!}
+- name: Runtastic
+  url: https://www.runtastic.com/en/users/{!!}
+- name: "Zwift (public profile)"
+  url: https://zwiftpower.com/profile.php?member={!!}
+- name: MapMyRun
+  url: https://www.mapmyrun.com/u/{!!}
+- name: Jawbone UP
+  url: https://jawbone.com/{!!}
+- name: Peloton
+  url: https://members.onepeloton.com/public_profile/{!!}
+- name: Garmin Connect
+  url: https://connect.garmin.com/modern/profile/{!!}
+# Local & Regional Networks
+- name: "Weibo (Mainland China)"
+  url: https://weibo.com/u/{!!}
+- name: "Qzone (China)"
+  url: https://user.qzone.qq.com/{!!}
+- name: "Renren (China)"
+  url: https://www.renren.com/{!!}
+- name: "Mixi (Japan)"
+  url: https://mixi.jp/show_friend.pl?id={!!}
+- name: "Odnoklassniki (Russia)"
+  url: https://ok.ru/profile/{!!}
+- name: "Taringa (Latin America)"
+  url: https://www.taringa.net/{!!}
+- name: "Xing (Germany)"
+  url: https://www.xing.com/profile/{!!}
+- name: "Doku (Japan)"
+  url: https://doku.com/{!!}
+- name: "JamiiForums (East Africa)"
+  url: https://www.jamiiforums.com/members/{!!}.73/
+- name: "VKontakte (alt)"
+  url: https://vk.com/{!!}
+# Blogging & Publishing
+- name: Blogger
+  url: https://{!!}.blogspot.com
+- name: Ghost
+  url: https://{!!}.ghost.io
+- name: LiveJournal
+  url: https://{!!}.livejournal.com
+- name: "Medium (alt)"
+  url: https://medium.com/u/{!!}
+- name: "Tumblr (alt)"
+  url: https://{!!}.tumblr.com
+- name: Wattpad
+  url: https://www.wattpad.com/user/{!!}
+- name: Vocal
+  url: https://vocal.media/@{!!}
+- name: Substack
+  url: https://{!!}.substack.com
+- name: Ghost Blog
+  url: https://{!!}.ghost.io
+# Niche, Community & Special Interest
+- name: Letterboxd
+  url: https://letterboxd.com/{!!}
+- name: GoodReads
+  url: https://www.goodreads.com/{!!}
+- name: ResearchGate
+  url: https://www.researchgate.net/profile/{!!}
+- name: Academia.edu
+  url: https://www.academia.edu/{!!}
+- name: Instructables
+  url: https://www.instructables.com/member/{!!}
+- name: Behance (again)
+  url: https://www.behance.net/{!!}
+- name: Ravelry
+  url: https://www.ravelry.com/people/{!!}
+- name: Mubi
+  url: https://mubi.com/cast/{!!}
+- name: SoundCloud (alt)
+  url: https://soundcloud.com/{!!}
+# Gaming & Entertainment
+- name: Xbox Live
+  url: https://account.xbox.com/en-us/Profile?gamerTag={!!}
+- name: PlayStation Network
+  url: https://my.playstation.com/{!!}
+- name: Epic Games
+  url: https://www.epicgames.com/id/{!!}
+- name: Roblox
+  url: https://www.roblox.com/users/{!!}/profile
+- name: Discord (alt)
+  url: https://discordapp.com/users/{!!}
+- name: Mixer (defunct but archived)
+  url: https://mixer.com/{!!}
+- name: Twitch (alt)
+  url: https://www.twitch.tv/{!!}
+- name: Mixer (alt again)
+  url: https://mixer.com/{!!}
+- name: Beam.pro
+  url: https://beam.pro/{!!}
+# Adult / Sensitive (use responsibly)
+# Miscellaneous & Others
+- name: Meetup
+  url: https://www.meetup.com/members/{!!}
+- name: Couchsurfing
+  url: https://www.couchsurfing.com/people/{!!}
+- name: Nextdoor
+  url: https://nextdoor.com/profile/{!!}
+- name: OpenStreetMap
+  url: https://www.openstreetmap.org/user/{!!}
+- name: TripAdvisor user
+  url: https://www.tripadvisor.com/members/{!!}
+- name: Signal
+  url: https://signal.me/#{!!}
+- name: Viber
+  url: https://invite.viber.com/?g2={!!}
+- name: LINE
+  url: https://line.me/ti/p/{!!}
+- name: KakaoTalk
+  url: https://open.kakao.com/o/{!!}
+- name: Slack
+  url: https://{!!}.slack.com
+- name: Skype
+  url: https://join.skype.com/invite/{!!}
+- name: Google Chat
+  url: https://mail.google.com/chat/u/{!!}
+- name: Microsoft Teams
+  url: https://teams.microsoft.com/l/chat/0/0?users={!!}
+- name: Facebook Messenger
+  url: https://m.me/{!!}
+- name: TikTok DM
+  url: https://www.tiktok.com/@{!!}
+- name: Clubhouse
+  url: https://www.clubhouse.com/@{!!}
+- name: Zoom
+  url: https://zoom.us/j/{!!}
+- name: Twitch Whisper
+  url: https://www.twitch.tv/{!!}
+- name: Reddit Chat
+  url: https://www.reddit.com/user/{!!}
+- name: Hike Messenger
+  url: https://hike.in/{!!}
+- name: IMO
+  url: https://www.imofree.com/{!!}
+- name: Zalo
+  url: https://zalo.me/{!!}
+- name: Wire
+  url: https://wire.com/{!!}
+- name: Threema
+  url: https://threema.id/{!!}
+- name: Wickr
+  url: https://me.wickr.com/{!!}
+- name: Element
+  url: https://matrix.to/#/{!!}
+- name: Mattermost
+  url: https://community.mattermost.com/{!!}
+- name: Rocket.Chat
+  url: https://open.rocket.chat/direct/{!!}
+- name: Chanty
+  url: https://chanty.com/users/{!!}
+- name: Troop Messenger
+  url: https://www.troopmessenger.com/{!!}
+- name: Flock
+  url: https://web.flock.com/?flockid={!!}
+- name: Zoho Cliq
+  url: https://cliq.zoho.com/chats/{!!}
+- name: Ryver
+  url: https://{!!}.ryver.com
+- name: Glip
+  url: https://app.ringcentral.com/glip/person/{!!}
+- name: Workplace Chat
+  url: https://workplace.facebook.com/{!!}
+- name: BBM Enterprise
+  url: https://bbme.com/{!!}
+- name: Kik
+  url: https://kik.me/{!!}
+- name: ICQ
+  url: https://icq.im/{!!}
+- name: Palringo
+  url: https://www.palringo.com/u/{!!}
+- name: Pidgin
+  url: https://pidgin.im/{!!}
+- name: Trillian
+  url: https://trillian.im/{!!}
+- name: MyChat
+  url: https://nsoft-s.com/{!!}
+- name: Jami
+  url: https://jami.net/{!!}
+- name: Tox
+  url: https://tox.chat/{!!}
+- name: Olvid
+  url: https://olvid.io/{!!}
+- name: Session
+  url: https://getsession.org/{!!}
+- name: Status
+  url: https://status.im/{!!}
+- name: Bridgefy
+  url: https://bridgefy.me/{!!}
+- name: Briar
+  url: https://briarproject.org/{!!}
+- name: Confide
+  url: https://getconfide.com/{!!}
+- name: Dust
+  url: https://www.usedust.com/{!!}
+- name: Silent Phone
+  url: https://www.silentcircle.com/{!!}
+- name: TamTam
+  url: https://tamtam.chat/{!!}
+- name: Yalla
+  url: https://www.yalla.live/{!!}
+- name: Zepeto
+  url: https://zepeto.me/u/{!!}
+- name: Amino Chat
+  url: https://aminoapps.com/u/{!!}
+- name: Telegram X
+  url: https://t.me/{!!}
+- name: Kik Messenger
+  url: https://kik.me/{!!}
+- name: IRCCloud
+  url: https://www.irccloud.com/{!!}
+- name: MIRC
+  url: https://www.mirc.com/{!!}
+- name: Campfire
+  url: https://campfirenow.com/{!!}
+- name: Plurk
+  url: https://www.plurk.com/{!!}
+- name: Hi5 Chat
+  url: https://secure.hi5.com/{!!}
+- name: Gaia Online Chat
+  url: https://www.gaiaonline.com/{!!}
+- name: Second Life IM
+  url: https://my.secondlife.com/{!!}
+- name: VRChat
+  url: https://www.vrchat.com/home/user/{!!}
+- name: Roblox Chat
+  url: https://www.roblox.com/users/{!!}/profile
+- name: Xbox Live Chat
+  url: https://account.xbox.com/en-us/profile?gamertag={!!}
+- name: Steam Chat
+  url: https://steamcommunity.com/id/{!!}
+- name: Epic Games Chat
+  url: https://www.epicgames.com/id/{!!}
+- name: Battle.net Chat
+  url: https://battle.net/{!!}
+- name: Origin Chat
+  url: https://myaccount.ea.com/{!!}
+- name: GOG Galaxy Chat
+  url: https://www.gog.com/u/{!!}
+- name: Itch.io Chat
+  url: https://itch.io/profile/{!!}
+- name: Stack Exchange
+  url: https://stackexchange.com/users/{!!}
+- name: Hacker News
+  url: https://news.ycombinator.com/user?id={!!}
+- name: Product Hunt
+  url: https://www.producthunt.com/@{!!}
+- name: Indie Hackers
+  url: https://www.indiehackers.com/{!!}
+- name: CodeProject
+  url: https://www.codeproject.com/Members/{!!}
+- name: DaniWeb
+  url: https://www.daniweb.com/members/{!!}
+- name: XDA Developers
+  url: https://forum.xda-developers.com/m/{!!}
+- name: Android Forums
+  url: https://androidforums.com/members/{!!}
+- name: MacRumors Forums
+  url: https://forums.macrumors.com/members/{!!}
+- name: Linus Tech Tips Forums
+  url: https://linustechtips.com/profile/{!!}
+- name: Tom's Hardware Forums
+  url: https://forums.tomshardware.com/members/{!!}
+- name: Bleeping Computer Forums
+  url: https://www.bleepingcomputer.com/forums/u/{!!}
+- name: Ars Technica OpenForum
+  url: https://arstechnica.com/civis/memberlist.php?mode=viewprofile&u={!!}
+- name: Overclock.net
+  url: https://www.overclock.net/u/{!!}
+- name: TechPowerUp Forums
+  url: https://www.techpowerup.com/forums/members/{!!}
+- name: Digital Point Forums
+  url: https://forums.digitalpoint.com/members/{!!}
+- name: WebmasterWorld
+  url: https://www.webmasterworld.com/profile.cgi?action=view&member={!!}
+- name: Warrior Forum
+  url: https://www.warriorforum.com/members/{!!}.html
+- name: BlackHatWorld
+  url: https://www.blackhatworld.com/members/{!!}
+- name: SEO Chat Forums
+  url: https://forums.seochat.com/members/{!!}
+- name: NamePros
+  url: https://www.namepros.com/members/{!!}
+- name: SitePoint Forums
+  url: https://www.sitepoint.com/community/u/{!!}
+- name: Moz Community
+  url: https://moz.com/community/users/{!!}
+- name: WebHostingTalk
+  url: https://www.webhostingtalk.com/member.php?username={!!}
+- name: W3Schools Forum
+  url: https://w3schools.invisionzone.com/profile/{!!}
+- name: PHP Freaks
+  url: https://forums.phpfreaks.com/profile/{!!}
+- name: Laravel.io
+  url: https://laravel.io/u/{!!}
+- name: Python.org Forums
+  url: https://discuss.python.org/u/{!!}
+- name: RStudio Community
+  url: https://community.rstudio.com/u/{!!}
+- name: DataTau
+  url: https://www.datatau.net/user/{!!}
+- name: Tableau Community
+  url: https://community.tableau.com/people/{!!}
+- name: Power BI Community
+  url: https://community.powerbi.com/t5/user/viewprofilepage/user-id/{!!}
+- name: Microsoft Tech Community
+  url: https://techcommunity.microsoft.com/t5/user/viewprofilepage/user-id/{!!}
+- name: Apple Support Communities
+  url: https://discussions.apple.com/profile/{!!}
+- name: Google Product Forums
+  url: https://support.google.com/profile/{!!}
+- name: LinkedIn Groups
+  url: https://www.linkedin.com/in/{!!}
+- name: Facebook Groups
+  url: https://www.facebook.com/{!!}
+- name: Discord Servers
+  url: https://discord.com/users/{!!}
+- name: Slack Communities
+  url: https://{!!}.slack.com
+- name: Figma Community
+  url: https://www.figma.com/@{!!}
+- name: ArtStation
+  url: https://www.artstation.com/{!!}
+- name: CGSociety
+  url: https://cgsociety.org/{!!}
+- name: Polycount
+  url: https://polycount.com/profile/{!!}
+- name: Sketchfab
+  url: https://sketchfab.com/{!!}
+- name: Mixamo Community
+  url: https://community.mixamo.com/{!!}
+- name: Modo Forums
+  url: https://community.foundry.com/members/{!!}
+- name: Blender Artists
+  url: https://blenderartists.org/u/{!!}
+- name: Unreal Engine Forums
+  url: https://forums.unrealengine.com/u/{!!}
+- name: SourceForge
+  url: https://sourceforge.net/u/{!!}
+- name: Codeberg
+  url: https://codeberg.org/{!!}
+- name: Launchpad
+  url: https://launchpad.net/~{!!}
+- name: Savannah
+  url: https://savannah.gnu.org/users/{!!}
+- name: Gitea
+  url: https://gitea.com/{!!}
+- name: NotABug
+  url: https://notabug.org/{!!}
+- name: Hackaday.io
+  url: https://hackaday.io/{!!}
+- name: OpenBugBounty
+  url: https://www.openbugbounty.org/researchers/{!!}
+- name: Vulners
+  url: https://vulners.com/user/{!!}
+- name: Exploit Database
+  url: https://www.exploit-db.com/?author={!!}
+- name: Packet Storm Security
+  url: https://packetstormsecurity.com/author/{!!}
+- name: SecurityTrails
+  url: https://securitytrails.com/list/{!!}
+- name: Shodan
+  url: https://www.shodan.io/search?query={!!}
+- name: Censys
+  url: https://search.censys.io/hosts/{!!}
+- name: ZoomEye
+  url: https://www.zoomeye.org/searchResult?q={!!}
+- name: VulnHub
+  url: https://www.vulnhub.com/author/{!!}
+- name: Exploit-DB Forum
+  url: https://forum.exploit-db.com/u/{!!}
+- name: Offensive Security Forums
+  url: https://forums.offensive-security.com/u/{!!}
+- name: Kali Linux Forums
+  url: https://forums.kali.org/member.php?username={!!}
+- name: BlackArch Forums
+  url: https://blackarch.org/forum/member.php?username={!!}
+- name: Parrot Security OS Forums
+  url: https://community.parrotsec.org/u/{!!}
+- name: Metasploit Community
+  url: https://community.rapid7.com/u/{!!}
+- name: DEF CON Forums
+  url: https://forum.defcon.org/member/{!!}
+- name: Null Byte
+  url: https://null-byte.wonderhowto.com/people/{!!}
+- name: Hack Forums
+  url: https://hackforums.net/member.php?action=profile&uid={!!}
+- name: Cracking Forum
+  url: https://cracking.org/members/{!!}
+- name: RaidForums (archived)
+  url: https://raidforums.com/User-{!!}
+- name: Nulled.to
+  url: https://www.nulled.to/user/{!!}
+- name: Sinister.ly
+  url: https://sinister.ly/User-{!!}
+- name: LeakForums
+  url: https://leakforums.net/members/{!!}
+- name: GreySec
+  url: https://greysec.net/member.php?action=profile&uid={!!}
+- name: BreachForums
+  url: https://breachforums.st/members/{!!}
+- name: Se7enSins
+  url: https://www.se7ensins.com/members/{!!}
+- name: XSS.is
+  url: https://xss.is/members/{!!}
+- name: Exploit.in
+  url: https://exploit.in/member/{!!}
+- name: Dark0de
+  url: https://dark0de.com/member/{!!}
+- name: Cracked.io
+  url: https://cracked.io/{!!}
+- name: OpenAI Community
+  url: https://community.openai.com/u/{!!}
+- name: Hugging Face
+  url: https://huggingface.co/{!!}
+- name: Colab
+  url: https://colab.research.google.com/u/{!!}
+- name: JSFiddle
+  url: https://jsfiddle.net/user/{!!}
+- name: Glitch
+  url: https://glitch.com/@{!!}
+- name: Hashnode
+  url: https://hashnode.com/@{!!}
+- name: FreeCodeCamp
+  url: https://www.freecodecamp.org/{!!}
+- name: Codewars
+  url: https://www.codewars.com/users/{!!}
+- name: HackerRank
+  url: https://www.hackerrank.com/{!!}
+- name: LeetCode
+  url: https://leetcode.com/{!!}
+- name: Topcoder
+  url: https://www.topcoder.com/members/{!!}
+- name: CodeChef
+  url: https://www.codechef.com/users/{!!}
+- name: AtCoder
+  url: https://atcoder.jp/users/{!!}
+- name: Ubisoft Connect
+  url: https://www.ubisoft.com/profile/{!!}
+- name: Rockstar Social Club
+  url: https://socialclub.rockstargames.com/member/{!!}
+- name: Origin
+  url: https://www.origin.com/profile/{!!}
+- name: EA
+  url: https://www.ea.com/profile/{!!}
+- name: Blizzard
+  url: https://blizzard.com/{!!}
+- name: Battle.net
+  url: https://battle.net/{!!}
+- name: Riot Games
+  url: https://riotgames.com/{!!}
+- name: League of Legends
+  url: https://na.op.gg/summoner/userName={!!}
+- name: Valorant
+  url: https://tracker.gg/valorant/profile/riot/{!!}
+- name: PUBG
+  url: https://pubg.op.gg/user/{!!}
+- name: Fortnite
+  url: https://fortnitetracker.com/profile/all/{!!}
+- name: Apex Legends
+  url: https://apex.tracker.gg/apex/profile/origin/{!!}
+- name: Call of Duty
+  url: https://cod.tracker.gg/warzone/profile/atvi/{!!}
+- name: Overwatch
+  url: https://overwatch.blizzard.com/en-us/career/{!!}
+- name: World of Warcraft
+  url: https://worldofwarcraft.com/en-us/character/{!!}
+- name: Dota 2
+  url: https://www.dotabuff.com/players/{!!}
+- name: CS:GO
+  url: https://csgostats.gg/player/{!!}
+- name: Halo Waypoint
+  url: https://www.halowaypoint.com/en-us/profile/{!!}
+- name: Minecraft
+  url: https://namemc.com/profile/{!!}
+- name: Genshin Impact
+  url: https://enka.network/u/{!!}
+- name: Warframe
+  url: https://warframe.market/profile/{!!}
+- name: Destiny 2
+  url: https://raid.report/pc/{!!}
+- name: Tarkov
+  url: https://www.escapefromtarkov.com/profile/{!!}
+- name: Final Fantasy XIV
+  url: https://na.finalfantasyxiv.com/lodestone/character/{!!}
+- name: Star Citizen
+  url: https://robertsspaceindustries.com/citizens/{!!}
+- name: RuneScape
+  url: https://secure.runescape.com/m=hiscore/compare?user1={!!}
+- name: Old School RuneScape
+  url: https://secure.runescape.com/m=hiscore_oldschool/compare?user1={!!}
+- name: Guild Wars 2
+  url: https://gw2efficiency.com/account/{!!}
+- name: Elder Scrolls Online
+  url: https://account.elderscrollsonline.com/users/{!!}
+- name: Path of Exile
+  url: https://www.pathofexile.com/account/view-profile/{!!}
+- name: "Magic: The Gathering Arena"
+  url: https://magic.wizards.com/en/profile/{!!}
+- name: Hearthstone
+  url: https://hearthstone.blizzard.com/en-us/player/{!!}
+- name: Smite
+  url: https://www.smitegame.com/profile/{!!}
+- name: Paladins
+  url: https://paladins.guru/profile/{!!}
+- name: Brawlhalla
+  url: https://www.brawlhalla.com/stats/{!!}
+- name: Rocket League
+  url: https://rocketleague.tracker.network/rocket-league/profile/{!!}
+- name: Fall Guys
+  url: https://fallguys.com/en-US/profile/{!!}
+- name: Among Us
+  url: https://amongus.dev/profile/{!!}
+- name: Clash of Clans
+  url: https://www.clashofstats.com/players/{!!}
+- name: Clash Royale
+  url: https://royaleapi.com/player/{!!}
+- name: Boom Beach
+  url: https://boombeach.fandom.com/wiki/User:{!!}
+- name: Brawl Stars
+  url: https://brawlstats.com/profile/{!!}
+- name: Mobile Legends
+  url: https://mobile-legends.fandom.com/wiki/User:{!!}
+- name: Free Fire
+  url: https://freefire.fandom.com/wiki/User:{!!}
+- name: Arena of Valor
+  url: https://aov.fandom.com/wiki/User:{!!}
+- name: Pokemon Go
+  url: https://pokemongohub.net/post/profile/{!!}
+- name: Ingress
+  url: https://www.ingress.com/profile/{!!}
+- name: Monster Hunter World
+  url: https://monsterhunterworld.wiki.fextralife.com/{!!}
+- name: Monster Hunter Rise
+  url: https://monsterhunterrise.wiki.fextralife.com/{!!}
+- name: Diablo 4
+  url: https://diablo4.blizzard.com/en-us/player/{!!}
+- name: Lost Ark
+  url: https://lostarkcodex.com/us/user/{!!}
+- name: New World
+  url: https://nwdb.info/db/player/{!!}
+- name: "Star Wars: The Old Republic"
+  url: https://swtor.com/community/member.php?username={!!}
+- name: Eve Online
+  url: https://evewho.com/pilot/{!!}
+- name: Amazon
+  url: https://www.amazon.com/s?k={!!}
+- name: eBay
+  url: https://www.ebay.com/usr/{!!}
+- name: Etsy
+  url: https://www.etsy.com/shop/{!!}
+- name: Alibaba
+  url: https://www.alibaba.com/showroom/{!!}.html
+- name: AliExpress
+  url: https://www.aliexpress.com/store/{!!}
+- name: Rakuten
+  url: https://www.rakuten.co.jp/{!!}
+- name: Flipkart
+  url: https://www.flipkart.com/search?q={!!}
+- name: Walmart
+  url: https://www.walmart.com/search?q={!!}
+- name: Target
+  url: https://www.target.com/s?searchTerm={!!}
+- name: Mercari
+  url: https://www.mercari.com/u/{!!}
+- name: Poshmark
+  url: https://poshmark.com/closet/{!!}
+- name: Depop
+  url: https://www.depop.com/{!!}
+- name: Wish
+  url: https://www.wish.com/search/{!!}
+- name: Newegg
+  url: https://www.newegg.com/p/pl?d={!!}
+- name: Lazada
+  url: https://www.lazada.com/{!!}
+- name: Shopee
+  url: https://shopee.com/{!!}
+- name: Gumtree
+  url: https://www.gumtree.com/profile/{!!}
+- name: OLX
+  url: https://www.olx.com/profile/{!!}
+- name: Craigslist
+  url: https://craigslist.org/search/{!!}
+- name: Carousell
+  url: https://www.carousell.com/{!!}
+- name: OfferUp
+  url: https://offerup.com/p/{!!}
+- name: Facebook Marketplace
+  url: https://www.facebook.com/marketplace/profile/{!!}
+- name: Letgo
+  url: https://www.letgo.com/en-u/profile/{!!}
+- name: Vinted
+  url: https://www.vinted.com/member/{!!}
+- name: Tradesy
+  url: https://www.tradesy.com/closet/{!!}
+- name: Bonanza
+  url: https://www.bonanza.com/booths/{!!}
+- name: eCRATER
+  url: https://www.ecrater.com/{!!}
+- name: Tophatter
+  url: https://tophatter.com/merchant/{!!}
+- name: Storenvy
+  url: https://www.storenvy.com/stores/{!!}
+- name: Chairish
+  url: https://www.chairish.com/shop/{!!}
+- name: Ruby Lane
+  url: https://www.rubylane.com/shop/{!!}
+- name: Reverb
+  url: https://reverb.com/shop/{!!}
+- name: StockX
+  url: https://stockx.com/{!!}
+- name: Grailed
+  url: https://www.grailed.com/{!!}
+- name: The RealReal
+  url: https://www.therealreal.com/sales/{!!}
+- name: Vestiaire Collective
+  url: https://www.vestiairecollective.com/members/{!!}
+- name: Stadium Goods
+  url: https://www.stadiumgoods.com/search?q={!!}
+- name: Flight Club
+  url: https://www.flightclub.com/search?q={!!}
+- name: GOAT
+  url: https://www.goat.com/search?query={!!}
+- name: Farfetch
+  url: https://www.farfetch.com/shopping/men/items.aspx?q={!!}
+- name: Net-a-Porter
+  url: https://www.net-a-porter.com/en-us/shop/search?keywords={!!}
+- name: Zalando
+  url: https://www.zalando.com/{!!}
+- name: ASOS Marketplace
+  url: https://marketplace.asos.com/boutique/{!!}
+- name: Boohoo
+  url: https://www.boohoo.com/search?q={!!}
+- name: Shein
+  url: https://www.shein.com/search/{!!}
+- name: Myntra
+  url: https://www.myntra.com/{!!}
+- name: Ajio
+  url: https://www.ajio.com/search/?text={!!}
+- name: Jabong
+  url: https://www.jabong.com/{!!}
+- name: Snapdeal
+  url: https://www.snapdeal.com/search?keyword={!!}
+- name: Paytm Mall
+  url: https://paytmmall.com/shop/search?q={!!}
+- name: BigBasket
+  url: https://www.bigbasket.com/ps/?q={!!}
+- name: Grofers
+  url: https://grofers.com/search?q={!!}
+- name: Instacart
+  url: https://www.instacart.com/store/{!!}
+- name: FreshDirect
+  url: https://www.freshdirect.com/srch.jsp?searchParams={!!}
+- name: Thrive Market
+  url: https://thrivemarket.com/search?q={!!}
+- name: Peapod
+  url: https://www.peapod.com/shop/{!!}
+- name: Boxed
+  url: https://www.boxed.com/search?query={!!}
+- name: Costco
+  url: https://www.costco.com/CatalogSearch?dept=All&keyword={!!}
+- name: Kickstarter
+  url: https://www.kickstarter.com/profile/{!!}
+- name: Indiegogo
+  url: https://www.indiegogo.com/individuals/{!!}
+- name: GoFundMe
+  url: https://www.gofundme.com/f/{!!}
+- name: Buy Me a Coffee
+  url: https://www.buymeacoffee.com/{!!}
+- name: Ko-fi
+  url: https://ko-fi.com/{!!}
+- name: Crowdfunder UK
+  url: https://www.crowdfunder.co.uk/u/{!!}
+- name: Chuffed
+  url: https://chuffed.org/profile/{!!}
+- name: FundRazr
+  url: https://fundrazr.com/{!!}
+- name: Donorbox
+  url: https://donorbox.org/{!!}
+- name: GiveSendGo
+  url: https://www.givesendgo.com/{!!}
+- name: Causes
+  url: https://www.causes.com/profiles/{!!}
+- name: Fundly
+  url: https://fundly.com/{!!}
+- name: JustGiving
+  url: https://www.justgiving.com/{!!}
+- name: GlobalGiving
+  url: https://www.globalgiving.org/donate/{!!}
+- name: YouCaring (archived)
+  url: https://www.youcaring.com/{!!}
+- name: Razoo
+  url: https://www.razoo.com/us/story/{!!}
+- name: Donately
+  url: https://donately.com/{!!}
+- name: PledgeMusic (archived)
+  url: https://www.pledgemusic.com/{!!}
+- name: DonorSee
+  url: https://donorsee.com/{!!}
+- name: Givebutter
+  url: https://givebutter.com/{!!}
+- name: GiveCampus
+  url: https://www.givecampus.com/campaigns/{!!}
+- name: Milaap
+  url: https://milaap.org/fundraisers/{!!}
+- name: Ketto
+  url: https://www.ketto.org/fundraiser/{!!}
+- name: ImpactGuru
+  url: https://www.impactguru.com/fundraiser/{!!}
+- name: DreamWallets
+  url: https://www.dreamwallets.com/fundraiser/{!!}
+- name: Wishberry
+  url: https://www.wishberry.in/campaign/{!!}
+- name: FuelADream
+  url: https://www.fueladream.com/home/campaign/{!!}
+- name: RangDe
+  url: https://rangde.in/i/{!!}
+- name: BitGive
+  url: https://www.bitgivefoundation.org/{!!}
+- name: Giveth
+  url: https://giveth.io/project/{!!}
+- name: StartSomeGood
+  url: https://startsomegood.com/{!!}
+- name: CrowdRise (GoFundMe Charity)
+  url: https://www.crowdrise.com/{!!}
+- name: DonorChoose
+  url: https://www.donorschoose.org/project/{!!}
+- name: MyCause
+  url: https://www.mycause.com.au/page/{!!}
+- name: EverydayHero
+  url: https://www.everydayhero.com/au/{!!}
+- name: Givealittle
+  url: https://givealittle.co.nz/profile/{!!}
+- name: SparkRaise
+  url: https://www.sparkraise.com/fundraiser/{!!}
+- name: Philanthro
+  url: https://philanthro.com/{!!}
+- name: Charidy
+  url: https://www.charidy.com/{!!}
+- name: BackerKit
+  url: https://www.backerkit.com/backers/{!!}
+- name: Crowd Supply
+  url: https://www.crowdsupply.com/{!!}
+- name: CrowdCube
+  url: https://www.crowdcube.com/investments/{!!}
+- name: SeedInvest
+  url: https://www.seedinvest.com/{!!}
+- name: Fundable
+  url: https://www.fundable.com/{!!}
+- name: MicroVentures
+  url: https://microventures.com/{!!}
+- name: AngelList
+  url: https://angel.co/u/{!!}
+- name: EquityNet
+  url: https://www.equitynet.com/crowdfunding/{!!}
+- name: Wefunder
+  url: https://wefunder.com/{!!}
+- name: NextSeed
+  url: https://www.nextseed.com/{!!}
+- name: Republic
+  url: https://republic.com/{!!}
+- name: Netcapital
+  url: https://netcapital.com/companies/{!!}
+- name: TruCrowd
+  url: https://www.trucrowd.com/{!!}
+- name: Venmo
+  url: https://venmo.com/{!!}
+- name: CashApp
+  url: https://cash.app/${!!}
+- name: Revolut
+  url: https://revolut.me/{!!}
+- name: Wise
+  url: https://wise.com/profile/{!!}
+- name: Payoneer
+  url: https://www.payoneer.com/{!!}
+- name: Skrill
+  url: https://account.skrill.com/wallet/account/{!!}
+- name: Neteller
+  url: https://member.neteller.com/account/{!!}
+- name: Happn
+  url: https://www.happn.com/@{!!}
+- name: Her
+  url: https://weareher.com/{!!}
+- name: Grindr
+  url: https://grindr.com/{!!}
+- name: Scruff
+  url: https://www.scruff.com/{!!}
+- name: Feeld
+  url: https://feeld.co/{!!}
+- name: Pure
+  url: https://pure.app/{!!}
+- name: Mingle2
+  url: https://mingle2.com/profile/{!!}
+- name: Skout
+  url: https://www.skout.com/{!!}
+- name: Clover
+  url: https://clover.co/{!!}
+- name: Hily
+  url: https://hily.com/{!!}
+- name: LOVOO
+  url: https://www.lovoo.com/profile/{!!}
+- name: MeetMe
+  url: https://www.meetme.com/{!!}
+- name: Tagged
+  url: https://www.tagged.com/{!!}
+- name: BlackPeopleMeet
+  url: https://www.blackpeoplemeet.com/v3/profile/{!!}
+- name: Christian Mingle
+  url: https://www.christianmingle.com/en/profile/{!!}
+- name: JDate
+  url: https://www.jdate.com/en/profile/{!!}
+- name: Shaadi.com
+  url: https://www.shaadi.com/profile/{!!}
+- name: Jeevansathi
+  url: https://www.jeevansathi.com/profile/{!!}
+- name: Bharat Matrimony
+  url: https://www.bharatmatrimony.com/profile/{!!}
+- name: TrulyMadly
+  url: https://trulymadly.com/{!!}
+- name: Aisle
+  url: https://www.aisle.co/{!!}
+- name: Woo
+  url: https://getwoo.at/{!!}
+- name: Tantan
+  url: https://tantanapp.com/{!!}
+- name: Muzmatch
+  url: https://muzmatch.com/{!!}
+- name: Salams
+  url: https://www.salams.app/{!!}
+- name: SingleMuslim
+  url: https://www.singlemuslim.com/user/{!!}
+- name: Muslima
+  url: https://www.muslima.com/en/profile/showProfile/ID/{!!}
+- name: Asiandating
+  url: https://www.asiandating.com/en/profile/{!!}
+- name: FilipinoCupid
+  url: https://www.filipinocupid.com/en/profile/{!!}
+- name: ThaiCupid
+  url: https://www.thaicupid.com/en/profile/{!!}
+- name: InternationalCupid
+  url: https://www.internationalcupid.com/en/profile/{!!}
+- name: LatinAmericanCupid
+  url: https://www.latinamericancupid.com/en/profile/{!!}
+- name: AfroIntroductions
+  url: https://www.afrointroductions.com/en/profile/{!!}
+- name: MexicanCupid
+  url: https://www.mexicancupid.com/en/profile/{!!}
+- name: PinkCupid
+  url: https://www.pinkcupid.com/en/profile/{!!}
+- name: BBWCupid
+  url: https://www.bbwcupid.com/en/profile/{!!}
+- name: MilitaryCupid
+  url: https://www.militarycupid.com/en/profile/{!!}
+- name: UniformDating
+  url: https://www.uniformdating.com/{!!}
+- name: FarmersOnly
+  url: https://www.farmersonly.com/{!!}
+- name: PositiveSingles
+  url: https://www.positivesingles.com/user/{!!}
+- name: HIVDating4U
+  url: https://www.hivdating4u.com/{!!}
+- name: Disabled Mate
+  url: https://www.disabledmate.com/{!!}
+- name: WhosHere
+  url: https://whoshere.com/{!!}
+- name: Ashley Madison
+  url: https://www.ashleymadison.com/en-us/profile/{!!}
+- name: Victoria Milan
+  url: https://www.victoriamilan.com/{!!}
+- name: Gleeden
+  url: https://www.gleeden.com/en/profile/{!!}
+- name: AdultFriendFinder
+  url: https://adultfriendfinder.com/p/{!!}
+- name: Passion.com
+  url: https://passion.com/p/{!!}
+- name: Fling
+  url: https://www.fling.com/profile/{!!}
+- name: FriendFinder-X
+  url: https://friendfinder-x.com/p/{!!}
+- name: XNXX
+  url: https://www.xnxx.com/profiles/{!!}
+- name: RedTube
+  url: https://www.redtube.com/users/{!!}
+- name: YouPorn
+  url: https://www.youporn.com/users/{!!}
+- name: SpankBang
+  url: https://spankbang.com/{!!}/profile
+- name: Eporner
+  url: https://www.eporner.com/profile/{!!}
+- name: TnaFlix
+  url: https://www.tnaflix.com/profile/{!!}
+- name: Tube8
+  url: https://www.tube8.com/profile/{!!}
+- name: NuBay
+  url: https://www.nubay.com/users/{!!}
+- name: Slutload
+  url: https://www.slutload.com/profile/{!!}
+- name: DrTuber
+  url: https://www.drtuber.com/users/{!!}
+- name: Porn.com
+  url: https://www.porn.com/users/{!!}
+- name: PornHD
+  url: https://www.pornhd.com/users/{!!}
+- name: SunPorno
+  url: https://www.sunporno.com/profile/{!!}
+- name: Beeg
+  url: https://beeg.com/users/{!!}
+- name: VPorn
+  url: https://www.vporn.com/users/{!!}
+- name: XXXBunker
+  url: https://www.xxxbunker.com/users/{!!}
+- name: BangYouLater
+  url: https://www.bangyoulater.com/users/{!!}
+- name: PornTrex
+  url: https://www.porntrex.com/profile/{!!}
+- name: HQPorner
+  url: https://www.hqporner.com/profile/{!!}
+- name: AlphaPorno
+  url: https://www.alphaporno.com/profile/{!!}
+- name: XXXDan
+  url: https://www.xxxdan.com/profile/{!!}
+- name: PornRabbit
+  url: https://www.pornrabbit.com/profile/{!!}
+- name: FapVid
+  url: https://fapvid.com/users/{!!}
+- name: XTube
+  url: https://www.xtube.com/profile/{!!}
+- name: Cam4
+  url: https://www.cam4.com/{!!}
+- name: LiveJasmin
+  url: https://www.livejasmin.com/en/chat/{!!}
+- name: BongaCams
+  url: https://en.bongacams.com/{!!}
+- name: StripChat
+  url: https://stripchat.com/{!!}
+- name: Camsoda
+  url: https://www.camsoda.com/{!!}
+- name: Flirt4Free
+  url: https://www.flirt4free.com/{!!}
+- name: ImLive
+  url: https://imlive.com/{!!}
+- name: Camster
+  url: https://www.camster.com/{!!}
+- name: Naked
+  url: https://www.naked.com/{!!}
+- name: CamRabbit
+  url: https://www.camrabbit.com/{!!}
+- name: Xcams
+  url: https://xcams.com/{!!}
+- name: CamContacts
+  url: https://www.camcontacts.com/{!!}
+- name: Streamate
+  url: https://www.streamate.com/{!!}
+- name: JasminLive
+  url: https://www.jasminlive.mobi/{!!}
+- name: Cams.com
+  url: https://www.cams.com/{!!}
+- name: IsLive
+  url: https://www.islive.com/{!!}
+- name: NakedSword
+  url: https://www.nakedsword.com/{!!}
+- name: Men.com
+  url: https://www.men.com/model/{!!}
+- name: CockyBoys
+  url: https://www.cockyboys.com/model/{!!}
+- name: Sean Cody
+  url: https://www.seancody.com/model/{!!}
+- name: Line
+  url: https://line.me/ti/p/{!!}
+- name: Zoom Chat
+  url: https://zoom.us/j/{!!}
+- name: AIM
+  url: https://aim.com/{!!}
+- name: Yahoo Messenger
+  url: https://messenger.yahoo.com/{!!}
+- name: Wickr Me
+  url: https://me.wickr.com/user/{!!}
+- name: Riot/Element
+  url: https://matrix.to/#/{!!}
+- name: Olark
+  url: https://www.olark.com/{!!}
+- name: Zulip
+  url: https://zulipchat.com/{!!}
+- name: Brosix
+  url: https://www.brosix.com/{!!}
+- name: TeamSpeak
+  url: https://www.teamspeak.com/{!!}
+- name: Mumble
+  url: https://www.mumble.com/{!!}
+- name: Guilded
+  url: https://www.guilded.gg/{!!}
+- name: Slackline
+  url: https://slackline.io/{!!}
+- name: Chant
+  url: https://www.chanty.com/{!!}
+- name: Houseparty
+  url: https://houseparty.com/{!!}
+- name: Marco Polo
+  url: https://www.marcopolo.me/{!!}
+- name: Clubhouse Chat
+  url: https://www.clubhouse.com/{!!}
+- name: Airtime
+  url: https://airtime.com/{!!}
+- name: HelloTalk
+  url: https://www.hellotalk.com/{!!}
+- name: Tandem
+  url: https://www.tandem.net/{!!}
+- name: Speaky
+  url: https://www.speaky.com/{!!}
+- name: Lingbe
+  url: https://www.lingbe.com/{!!}
+- name: Slowly
+  url: https://www.getslowly.com/{!!}
+- name: WeSpeke
+  url: https://www.wespeke.com/{!!}
+- name: Voxer
+  url: https://www.voxer.com/{!!}
+- name: Zello
+  url: https://zello.com/{!!}
+- name: HeyTell
+  url: https://www.heytell.com/{!!}
+- name: Walkie
+  url: https://www.walkie.app/{!!}
+- name: PushToTalk
+  url: https://www.pushtotalk.com/{!!}
+- name: OpenTalk
+  url: https://opentalk.to/{!!}
+- name: Camfrog
+  url: https://www.camfrog.com/{!!}
+- name: Paltalk
+  url: https://www.paltalk.com/{!!}
+- name: ooVoo
+  url: https://www.oovoo.com/{!!}
+- name: JusTalk
+  url: https://justalk.com/{!!}
+- name: Gruveo
+  url: https://www.gruveo.com/{!!}
+- name: Popcorn Buzz
+  url: https://popcornbuzz.line.me/{!!}
+- name: Talkray
+  url: https://www.talkray.com/{!!}
+- name: YallaChat
+  url: https://yalla.chat/{!!}
+- name: Tuenti
+  url: https://www.tuenti.com/{!!}
+- name: IMO HD
+  url: https://imo.im/{!!}
+- name: Lovoo Chat
+  url: https://www.lovoo.com/{!!}
+- name: Twoo Chat
+  url: https://www.twoo.com/{!!}
+- name: Badoo Chat
+  url: https://badoo.com/{!!}
+- name: Plenty of Fish Chat
+  url: https://pof.com/{!!}
+- name: MocoSpace
+  url: https://www.mocospace.com/{!!}
+- name: FriendFinder Chat
+  url: https://www.friendfinder.com/{!!}
+- name: AsiaFriendFinder Chat
+  url: https://asiafriendfinder.com/{!!}
+- name: AfroIntroductions Chat
+  url: https://afrointroductions.com/{!!}
+- name: LatinAmericanCupid Chat
+  url: https://latinamericancupid.com/{!!}
+- name: Muslima Chat
+  url: https://muslima.com/{!!}
+- name: PinkCupid Chat
+  url: https://pinkcupid.com/{!!}
+- name: BBWCupid Chat
+  url: https://bbwcupid.com/{!!}
+- name: InterracialCupid Chat
+  url: https://interracialcupid.com/{!!}
+- name: GamerLink Chat
+  url: https://gamerlink.gg/{!!}
+- name: PlayStation Network Chat
+  url: https://www.playstation.com/{!!}
+- name: Uplay Chat
+  url: https://www.ubisoft.com/{!!}
+- name: Minecraft Chat
+  url: https://minecraft.net/{!!}
+- name: Trovo Chat
+  url: https://trovo.live/{!!}
+- name: Caffeine Chat
+  url: https://www.caffeine.tv/{!!}
+- name: DLive Chat
+  url: https://dlive.tv/{!!}
+- name: YouNow Chat
+  url: https://younow.com/{!!}
+- name: Periscope Chat
+  url: https://www.pscp.tv/{!!}
+- name: Threads Chat
+  url: https://www.threads.net/{!!}
+- name: X/Twitter DM
+  url: https://x.com/{!!}
+- name: Mastodon Chat
+  url: https://mastodon.social/@{!!}
+- name: Bluesky Chat
+  url: https://bsky.app/profile/{!!}
+- name: Hive Social Chat
+  url: https://thehive.com/{!!}
+- name: Truth Social Chat
+  url: https://truthsocial.com/@{!!}
+- name: Parler Chat
+  url: https://parler.com/{!!}
+- name: Gab Chat
+  url: https://gab.com/{!!}
+- name: MeWe Chat
+  url: https://mewe.com/{!!}
+- name: Minds Chat
+  url: https://www.minds.com/{!!}
+- name: Diaspora Chat
+  url: https://diasp.org/{!!}
+- name: Friendica Chat
+  url: https://friendi.ca/{!!}
+- name: Ello Chat
+  url: https://ello.co/{!!}
+- name: Openbook Chat
+  url: https://openbook.org/{!!}
+- name: Spreely Chat
+  url: https://spreely.com/{!!}
+- name: VK Messenger
+  url: https://vk.com/{!!}
+- name: OK.ru Chat
+  url: https://ok.ru/{!!}
+- name: Yandex Chat
+  url: https://yandex.ru/{!!}
+- name: Rambler Chat
+  url: https://rambler.ru/{!!}
+- name: Mail.ru Chat
+  url: https://mail.ru/{!!}
+- name: Baidu Hi
+  url: https://hi.baidu.com/{!!}
+- name: Renren Chat
+  url: https://renren.com/{!!}
+- name: Kaixin001 Chat
+  url: https://kaixin001.com/{!!}
+- name: Weibo Chat
+  url: https://weibo.com/{!!}
+- name: Douyin Chat
+  url: https://www.douyin.com/user/{!!}
+- name: Kuaishou Chat
+  url: https://www.kuaishou.com/profile/{!!}
+- name: YY Chat
+  url: https://www.yy.com/{!!}
+- name: Bilibili Chat
+  url: https://space.bilibili.com/{!!}
+- name: Zhihu Chat
+  url: https://www.zhihu.com/people/{!!}
+- name: Xiaohongshu Chat
+  url: https://www.xiaohongshu.com/user/profile/{!!}
+- name: Naver Line Chat
+  url: https://line.naver.jp/{!!}
+- name: KakaoStory Chat
+  url: https://story.kakao.com/{!!}
+- name: Cyworld Chat
+  url: https://cyworld.com/{!!}
+- name: Mixi Chat
+  url: https://mixi.jp/{!!}
+- name: Ameba Chat
+  url: https://ameblo.jp/{!!}
+- name: Gree Chat
+  url: https://gree.jp/{!!}
+- name: Mobage Chat
+  url: https://www.mbga.jp/{!!}
+- name: Pixiv Chat
+  url: https://www.pixiv.net/en/users/{!!}
+- name: NicoNico Chat
+  url: https://www.nicovideo.jp/user/{!!}
+- name: FC2 Chat
+  url: https://id.fc2.com/{!!}
+- name: Hatena Chat
+  url: https://profile.hatena.ne.jp/{!!}
+- name: Cookpad Chat
+  url: https://cookpad.com/{!!}
+- name: Lobi Chat
+  url: https://web.lobi.co/user/{!!}
+- name: Comico Chat
+  url: https://www.comico.jp/{!!}
+- name: Monnaka Chat
+  url: https://monnaka.jp/{!!}
+- name: Amino Communities
+  url: https://aminoapps.com/c/{!!}
+- name: Amino Creator Chat
+  url: https://aminoapps.com/p/{!!}
+- name: FanFiction Chat
+  url: https://www.fanfiction.net/u/{!!}
+- name: Wattpad Chat
+  url: https://www.wattpad.com/user/{!!}
+- name: Quotev Chat
+  url: https://www.quotev.com/{!!}
+- name: ArchiveOfOurOwn Chat
+  url: https://archiveofourown.org/users/{!!}
+- name: DeviantArt Chat
+  url: https://www.deviantart.com/{!!}
+- name: ArtStation Chat
+  url: https://www.artstation.com/{!!}
+- name: Behance Chat
+  url: https://www.behance.net/{!!}
+- name: Dribbble Chat
+  url: https://dribbble.com/{!!}
+- name: 500px Chat
+  url: https://500px.com/{!!}
+- name: VSCO Chat
+  url: https://vsco.co/{!!}
+- name: EyeEm Chat
+  url: https://www.eyeem.com/u/{!!}
+- name: Unsplash Chat
+  url: https://unsplash.com/@{!!}
+- name: Flickr Chat
+  url: https://www.flickr.com/people/{!!}
+- name: SmugMug Chat
+  url: https://www.smugmug.com/{!!}
+- name: Photobucket Chat
+  url: https://photobucket.com/user/{!!}
+- name: ImageShack Chat
+  url: https://imageshack.com/user/{!!}
+- name: Shutterfly Chat
+  url: https://www.shutterfly.com/{!!}
+- name: Meetup Chat
+  url: https://www.meetup.com/{!!}
+- name: Eventbrite Chat
+  url: https://www.eventbrite.com/o/{!!}
+- name: Evite Chat
+  url: https://www.evite.com/{!!}
+- name: Splash Chat
+  url: https://splashthat.com/{!!}
+- name: Facebook Groups Chat
+  url: https://www.facebook.com/groups/{!!}
+- name: LinkedIn Messaging
+  url: https://www.linkedin.com/in/{!!}
+- name: Xing Chat
+  url: https://www.xing.com/profile/{!!}
+- name: Viadeo Chat
+  url: https://www.viadeo.com/en/profile/{!!}
+- name: Opportunity Chat
+  url: https://www.myopportunity.com/profile/{!!}
+- name: AngelList Chat
+  url: https://angel.co/u/{!!}
+- name: Crunchbase Chat
+  url: https://www.crunchbase.com/person/{!!}
+- name: ProductHunt Chat
+  url: https://www.producthunt.com/@{!!}
+- name: IndieHackers Chat
+  url: https://www.indiehackers.com/{!!}
+- name: HackerNews Chat
+  url: https://news.ycombinator.com/user?id={!!}
+- name: Stack Overflow Chat
+  url: https://stackoverflow.com/users/{!!}
+- name: Dev.to Chat
+  url: https://dev.to/{!!}
+- name: Hashnode Chat
+  url: https://hashnode.com/@{!!}
+- name: CodePen Chat
+  url: https://codepen.io/{!!}
+- name: JSFiddle Chat
+  url: https://jsfiddle.net/user/{!!}
+- name: Glitch Chat
+  url: https://glitch.com/@{!!}
+- name: Replit Chat
+  url: https://replit.com/@{!!}
+- name: SourceForge Chat
+  url: https://sourceforge.net/u/{!!}
+- name: Launchpad Chat
+  url: https://launchpad.net/~{!!}
+- name: Slashdot
+  url: https://slashdot.org/~{!!}
+- name: Coding Forums
+  url: https://www.codingforums.com/members/{!!}
+- name: The Admin Zone
+  url: https://theadminzone.com/members/{!!}
+- name: LowEndTalk
+  url: https://lowendtalk.com/profile/{!!}
+- name: V7N Forum
+  url: https://www.v7n.com/forums/members/{!!}
+- name: iMore Forums
+  url: https://forums.imore.com/members/{!!}
+- name: Windows Central Forums
+  url: https://forums.windowscentral.com/members/{!!}
+- name: Neowin Forums
+  url: https://www.neowin.net/forum/user/{!!}
+- name: BleepingComputer Forums
+  url: https://www.bleepingcomputer.com/forums/u/{!!}
+- name: TechSpot Community
+  url: https://www.techspot.com/community/members/{!!}
+- name: Tom’s Hardware Forums
+  url: https://forums.tomshardware.com/members/{!!}
+- name: AnandTech Forums
+  url: https://forums.anandtech.com/members/{!!}
+- name: Overclockers Forum
+  url: https://www.overclockers.com/forums/member.php?username={!!}
+- name: Extreme Overclocking Forums
+  url: https://www.overclockers.com/forums/member.php?username={!!}
+- name: HardForum
+  url: https://hardforum.com/members/{!!}
+- name: NotebookReview Forum
+  url: https://forum.notebookreview.com/members/{!!}
+- name: DSLR Reports Forums
+  url: https://www.dslreports.com/profile/{!!}
+- name: Broadband Reports Forums
+  url: https://www.dslreports.com/profile/{!!}
+- name: Ars Technica Gaming Forum
+  url: https://arstechnica.com/civis/memberlist.php?mode=viewprofile&u={!!}
+- name: GameFAQs
+  url: https://gamefaqs.gamespot.com/community/{!!}
+- name: IGN Boards
+  url: https://www.ignboards.com/members/{!!}
+- name: NeoGAF
+  url: https://www.neogaf.com/members/{!!}
+- name: ResetEra
+  url: https://www.resetera.com/members/{!!}
+- name: Giant Bomb Forums
+  url: https://www.giantbomb.com/profile/{!!}
+- name: Eurogamer Forum
+  url: https://community.eurogamer.net/members/{!!}
+- name: PC Gamer Forums
+  url: https://forums.pcgamer.com/members/{!!}
+- name: MMO Champion Forums
+  url: https://www.mmo-champion.com/members/{!!}
+- name: WoW Forums
+  url: https://us.forums.blizzard.com/en/wow/u/{!!}
+- name: RuneScape Forums
+  url: https://secure.runescape.com/m=forum/forums.ws?search={!!}
+- name: Hypixel Forums
+  url: https://hypixel.net/members/{!!}
+- name: Planet Minecraft Forums
+  url: https://www.planetminecraft.com/member/{!!}
+- name: Minecraft Forum
+  url: https://www.minecraftforum.net/members/{!!}
+- name: SpigotMC Forums
+  url: https://www.spigotmc.org/members/{!!}
+- name: Bukkit Forums
+  url: https://bukkit.org/members/{!!}
+- name: Unity Forum
+  url: https://forum.unity.com/members/{!!}
+- name: Godot Engine Forum
+  url: https://godotforums.org/profile/{!!}
+- name: ConceptArt.org
+  url: https://conceptart.org/members/{!!}
+- name: Pixiv
+  url: https://www.pixiv.net/en/users/{!!}
+- name: Newgrounds
+  url: https://{!!}.newgrounds.com
+- name: SoundCloud Community
+  url: https://community.soundcloud.com/users/{!!}
+- name: BandLab Community
+  url: https://www.bandlab.com/{!!}
+- name: KVR Audio Forum
+  url: https://www.kvraudio.com/forum/member/{!!}
+- name: Gearspace Forum
+  url: https://gearspace.com/board/members/{!!}
+- name: TheGearPage.net
+  url: https://www.thegearpage.net/board/index.php?members/{!!}
+- name: TalkBass Forum
+  url: https://www.talkbass.com/members/{!!}
+- name: Ultimate Guitar Forum
+  url: https://www.ultimate-guitar.com/u/{!!}
+- name: PhotographyTalk Forum
+  url: https://www.photographytalk.com/forum/user/{!!}
+- name: Photo.net
+  url: https://www.photo.net/discuss/members/{!!}
+- name: DPReview Forums
+  url: https://www.dpreview.com/members/{!!}
+- name: Fred Miranda Forums
+  url: https://www.fredmiranda.com/forum/members/{!!}
+- name: Rangefinder Forum
+  url: https://www.rangefinderforum.com/members/{!!}
+- name: Model Mayhem Forum
+  url: https://www.modelmayhem.com/{!!}
+- name: Cosplay.com Forums
+  url: https://www.cosplay.com/members/{!!}
+- name: RPF Forum
+  url: https://www.therpf.com/forums/members/{!!}
+- name: FanFiction.net Forum
+  url: https://www.fanfiction.net/u/{!!}
+- name: Archive of Our Own
+  url: https://archiveofourown.org/users/{!!}
+- name: Wattpad Community
+  url: https://www.wattpad.com/user/{!!}
+- name: Goodreads Community
+  url: https://www.goodreads.com/user/show/{!!}
+- name: LibraryThing Forum
+  url: https://www.librarything.com/profile/{!!}
+- name: BookCrossing Forum
+  url: https://www.bookcrossing.com/mybookshelf/{!!}
+- name: NaNoWriMo Forum
+  url: https://nanowrimo.org/participants/{!!}
+- name: Penana
+  url: https://www.penana.com/user/{!!}
+- name: Scribophile
+  url: https://www.scribophile.com/members/{!!}
+- name: Stage 32
+  url: https://www.stage32.com/profile/{!!}
+- name: FilmAffinity Forum
+  url: https://www.filmaffinity.com/en/userratings.php?user_id={!!}
+- name: IMDb Community
+  url: https://contribute.imdb.com/user/{!!}
+- name: AniList
+  url: https://anilist.co/user/{!!}
+- name: Kitsu
+  url: https://kitsu.io/users/{!!}
+- name: Anime-Planet
+  url: https://www.anime-planet.com/users/{!!}
+- name: Crunchyroll Forum
+  url: https://www.crunchyroll.com/user/{!!}
+- name: Funimation Forum
+  url: https://www.funimation.com/members/{!!}
+- name: Gaia Online
+  url: https://www.gaiaonline.com/profiles/{!!}
+- name: IMVU Forums
+  url: https://www.imvu.com/catalog/web_mypage.php?user={!!}
+- name: Second Life Community
+  url: https://my.secondlife.com/{!!}
+- name: VRChat Community
+  url: https://vrchat.com/home/user/{!!}
+- name: Roblox Forum Archive
+  url: https://web.roblox.com/users/{!!}
+- name: Bitcointalk Forum
+  url: https://bitcointalk.org/index.php?action=profile;u={!!}
+- name: CryptoCompare Forum
+  url: https://www.cryptocompare.com/members/{!!}
+- name: CoinTelegraph Community
+  url: https://cointelegraph.com/authors/{!!}
+- name: Steemit
+  url: https://steemit.com/@{!!}
+- name: Hive.blog
+  url: https://hive.blog/@{!!}
+- name: PeakD
+  url: https://peakd.com/@{!!}
+- name: Publish0x
+  url: https://www.publish0x.com/@{!!}
+- name: Minds
+  url: https://www.minds.com/{!!}
+- name: Gab
+  url: https://gab.com/{!!}
+- name: Parler
+  url: https://parler.com/{!!}
+- name: Truth Social
+  url: https://truthsocial.com/@{!!}
+- name: Gettr
+  url: https://gettr.com/user/{!!}
+- name: MeWe
+  url: https://mewe.com/i/{!!}
+- name: Rumble Community
+  url: https://rumble.com/user/{!!}
+- name: Odysee
+  url: https://odysee.com/@{!!}
+- name: DTube
+  url: https://d.tube/#!/c/{!!}
+- name: PeerTube
+  url: https://peertube.tv/accounts/{!!}
+- name: BitChute Community
+  url: https://www.bitchute.com/profile/{!!}
+- name: Locals
+  url: https://locals.com/member/{!!}
+- name: OK.ru
+  url: https://ok.ru/{!!}
+- name: 2ch.hk
+  url: https://2ch.hk/{!!}
+- name: 4chan Archive
+  url: https://boards.4chan.org/{!!}
+- name: 8kun
+  url: https://8kun.top/{!!}
+- name: Something Awful Forums
+  url: https://forums.somethingawful.com/member.php?action=getinfo&username={!!}
+- name: MetaFilter
+  url: https://www.metafilter.com/user/{!!}
+- name: Fark
+  url: https://www.fark.com/users/{!!}
+- name: Slashdot Journals
+  url: https://slashdot.org/~{!!}
+- name: The Straight Dope Forums
+  url: https://boards.straightdope.com/u/{!!}
+- name: City-Data Forum
+  url: https://www.city-data.com/forum/members/{!!}
+- name: Democratic Underground
+  url: https://www.democraticunderground.com/~{!!}
+- name: Free Republic
+  url: https://www.freerepublic.com/~{!!}
+- name: Conservative Treehouse Forum
+  url: https://theconservativetreehouse.com/members/{!!}
+- name: Political Forum
+  url: https://politicalforum.com/members/{!!}
+- name: Debate Politics Forum
+  url: https://debatepolitics.com/members/{!!}
+- name: Above Top Secret
+  url: https://www.abovetopsecret.com/forum/members/{!!}
+- name: Godlike Productions Forum
+  url: https://www.godlikeproductions.com/members/{!!}
+- name: The Shroomery
+  url: https://www.shroomery.org/forums/members/{!!}
+- name: Bluelight Forum
+  url: https://bluelight.org/members/{!!}
+- name: Drugs-Forum
+  url: https://drugs-forum.com/members/{!!}
+- name: Erowid Experience Vaults
+  url: https://erowid.org/members/{!!}
+- name: PsychonautWiki
+  url: https://psychonautwiki.org/wiki/User:{!!}
+- name: DMT Nexus
+  url: https://www.dmt-nexus.me/forum/member/{!!}
+- name: MyFitnessPal Community
+  url: https://community.myfitnesspal.com/en/profile/{!!}
+- name: Bodybuilding.com Forum
+  url: https://forum.bodybuilding.com/member.php?username={!!}
+- name: T-Nation Forum
+  url: https://forums.t-nation.com/u/{!!}
+- name: Muscle & Strength Forum
+  url: https://forum.muscleandstrength.com/members/{!!}
+- name: Cycling Forums
+  url: https://www.cyclingforums.com/members/{!!}
+- name: BikeForums.net
+  url: https://www.bikeforums.net/members/{!!}
+- name: Runner’s World Forums
+  url: https://forums.runnersworld.com/profile/{!!}
+- name: Slowtwitch Forum
+  url: https://forum.slowtwitch.com/member/{!!}
+- name: Climbing Forum
+  url: https://www.ukclimbing.com/forums/profile.php?id={!!}
+- name: Mountaineering Forum
+  url: https://www.summitpost.org/users/{!!}
+- name: Sailing Anarchy Forum
+  url: https://forums.sailinganarchy.com/members/{!!}
+- name: Cruisers Forum
+  url: https://www.cruisersforum.com/members/{!!}
+- name: The Hull Truth Forum
+  url: https://www.thehulltruth.com/members/{!!}
+- name: JeepForum
+  url: https://www.jeepforum.com/members/{!!}
+- name: VWVortex Forum
+  url: https://www.vwvortex.com/members/{!!}
+- name: Bimmerfest Forum
+  url: https://www.bimmerfest.com/members/{!!}
+- name: Tesla Motors Club
+  url: https://teslamotorsclub.com/tmc/members/{!!}
+- name: MotorTrend Forum
+  url: https://www.motortrend.com/members/{!!}
+- name: CarGurus Forum
+  url: https://www.cargurus.com/Cars/members/{!!}
+- name: Aviation Forum
+  url: https://www.airliners.net/forum/members/{!!}
+- name: Pilots of America Forum
+  url: https://www.pilotsofamerica.com/members/{!!}
+- name: Model Railway Forum
+  url: https://modelrailwayforum.co.uk/members/{!!}
+- name: TrainBoard
+  url: https://www.trainboard.com/highball/index.php?members/{!!}
+- name: GardenWeb Forums
+  url: https://www.gardenweb.com/members/{!!}
+- name: Houzz Forums
+  url: https://www.houzz.com/user/{!!}
+- name: TheCatSite Forum
+  url: https://thecatsite.com/members/{!!}
+- name: DogForum
+  url: https://www.dogforum.com/members/{!!}
+- name: Aquarium Advice Forum
+  url: https://www.aquariumadvice.com/members/{!!}
+- name: Reef Central Forum
+  url: https://www.reefcentral.com/forums/member.php?username={!!}
+- name: BirdForum
+  url: https://www.birdforum.net/members/{!!}
+- name: Beekeeping Forum
+  url: https://beemaster.com/forum/index.php?action=profile;u={!!}
+- name: Homesteading Today
+  url: https://www.homesteadingtoday.com/members/{!!}
+- name: Survivalist Boards
+  url: https://www.survivalistboards.com/members/{!!}
+- name: Prepper Forum
+  url: https://www.prepperforums.net/members/{!!}
+- name: KnifeTalk Forum
+  url: https://knifetalkforums.com/members/{!!}
+- name: BladeForums
+  url: https://www.bladeforums.com/members/{!!}
+- name: Gun Forums
+  url: https://www.thehighroad.org/index.php?members/{!!}
+- name: AR15.com
+  url: https://www.ar15.com/member/{!!}
+- name: The Firing Line Forum
+  url: https://thefiringline.com/forums/member.php?username={!!}
+- name: Cast Boolits Forum
+  url: https://castboolits.gunloads.com/member.php?username={!!}
+- name: HuntingNet Forum
+  url: https://www.huntingnet.com/forum/members/{!!}
+- name: ArcheryTalk Forum
+  url: https://www.archerytalk.com/members/{!!}
+- name: Gitee
+  url: https://gitee.com/{!!}
+- name: Savannah GNU
+  url: https://savannah.gnu.org/users/{!!}
+- name: GitGud
+  url: https://gitgud.io/{!!}
+- name: Phabricator
+  url: https://secure.phabricator.com/p/{!!}
+- name: CodePlex Archive
+  url: https://archive.codeplex.com/users/{!!}
+- name: Eclipse Marketplace
+  url: https://marketplace.eclipse.org/user/{!!}
+- name: JetBrains Community
+  url: https://intellij-support.jetbrains.com/hc/en-us/profiles/{!!}
+- name: VS Code Marketplace
+  url: https://marketplace.visualstudio.com/publishers/{!!}
+- name: Atom.io
+  url: https://atom.io/users/{!!}
+- name: Sublime Forum
+  url: https://forum.sublimetext.com/u/{!!}
+- name: Super User
+  url: https://superuser.com/users/{!!}
+- name: Ask Ubuntu
+  url: https://askubuntu.com/users/{!!}
+- name: Unix & Linux StackExchange
+  url: https://unix.stackexchange.com/users/{!!}
+- name: Mathematics StackExchange
+  url: https://math.stackexchange.com/users/{!!}
+- name: Data Science StackExchange
+  url: https://datascience.stackexchange.com/users/{!!}
+- name: Security StackExchange
+  url: https://security.stackexchange.com/users/{!!}
+- name: Crypto StackExchange
+  url: https://crypto.stackexchange.com/users/{!!}
+- name: AI StackExchange
+  url: https://ai.stackexchange.com/users/{!!}
+- name: Papers with Code
+  url: https://paperswithcode.com/user/{!!}
+- name: Colab Community
+  url: https://colab.research.google.com/user/{!!}
+- name: MATLAB Central
+  url: https://www.mathworks.com/matlabcentral/profile/authors/{!!}
+- name: Wolfram Community
+  url: https://community.wolfram.com/web/{!!}
+- name: JuliaLang Discourse
+  url: https://discourse.julialang.org/u/{!!}
+- name: Python.org Forum
+  url: https://discuss.python.org/u/{!!}
+- name: Ruby Forum
+  url: https://www.ruby-forum.com/u/{!!}
+- name: PHP Freaks Forum
+  url: https://forums.phpfreaks.com/profile/{!!}
+- name: PerlMonks
+  url: https://www.perlmonks.org/?node_id=108935;user={!!}
+- name: NodeBB Community
+  url: https://community.nodebb.org/user/{!!}
+- name: NPMjs
+  url: https://www.npmjs.com/~{!!}
+- name: PyPI
+  url: https://pypi.org/user/{!!}
+- name: CPAN
+  url: https://metacpan.org/author/{!!}
+- name: Go Forum
+  url: https://forum.golangbridge.org/u/{!!}
+- name: Rust Users Forum
+  url: https://users.rust-lang.org/u/{!!}
+- name: DLang Forum
+  url: https://forum.dlang.org/profile.cgi?user={!!}
+- name: ClojureVerse
+  url: https://clojureverse.org/u/{!!}
+- name: Haskell Discourse
+  url: https://discourse.haskell.org/u/{!!}
+- name: Elm Discourse
+  url: https://discourse.elm-lang.org/u/{!!}
+- name: Scala Users
+  url: https://users.scala-lang.org/u/{!!}
+- name: Swift Forums
+  url: https://forums.swift.org/u/{!!}
+- name: Kotlin Discussions
+  url: https://discuss.kotlinlang.org/u/{!!}
+- name: Android Developers Forum
+  url: https://developer.android.com/profile/{!!}
+- name: iOS Developer Slack
+  url: https://iosdeveloper.io/u/{!!}
+- name: Apple Developer Forums
+  url: https://developer.apple.com/forums/profile/{!!}
+- name: Windows Dev Center
+  url: https://developer.microsoft.com/en-us/members/{!!}
+- name: MSDN Forum
+  url: https://social.msdn.microsoft.com/profile/{!!}
+- name: Visual Studio Forum
+  url: https://developercommunity.visualstudio.com/u/{!!}
+- name: DotNetFiddle
+  url: https://dotnetfiddle.net/User/{!!}
+- name: Codingame
+  url: https://www.codingame.com/profile/{!!}
+- name: Exercism
+  url: https://exercism.org/profiles/{!!}
+- name: InterviewBit
+  url: https://www.interviewbit.com/profile/{!!}
+- name: Sphere Online Judge
+  url: https://www.spoj.com/users/{!!}
+- name: Codeforces
+  url: https://codeforces.com/profile/{!!}
+- name: UVa Online Judge
+  url: https://onlinejudge.org/index.php?option=com_comprofiler&task=userProfile&user={!!}
+- name: Kattis
+  url: https://open.kattis.com/users/{!!}
+- name: HackerEarth
+  url: https://www.hackerearth.com/@{!!}
+- name: Project Euler
+  url: https://projecteuler.net/progress={!!}
+- name: Rosetta Code
+  url: https://rosettacode.org/wiki/User:{!!}
+- name: Codecademy
+  url: https://www.codecademy.com/profiles/{!!}
+- name: SoloLearn
+  url: https://www.sololearn.com/profile/{!!}
+- name: The Odin Project
+  url: https://www.theodinproject.com/users/{!!}
+- name: Pluralsight Community
+  url: https://app.pluralsight.com/profile/{!!}
+- name: Coursera Community
+  url: https://www.coursera.org/user/{!!}
+- name: Udemy Community
+  url: https://www.udemy.com/user/{!!}
+- name: edX Community
+  url: https://courses.edx.org/u/{!!}
+- name: Treehouse Community
+  url: https://teamtreehouse.com/{!!}
+- name: DevRant
+  url: https://devrant.com/users/{!!}
+- name: Coderwall
+  url: https://coderwall.com/{!!}
+- name: DZone
+  url: https://dzone.com/users/{!!}
+- name: SitePoint Community
+  url: https://www.sitepoint.com/community/u/{!!}
+- name: DigitalOcean Community
+  url: https://www.digitalocean.com/community/users/{!!}
+- name: Linode Community
+  url: https://www.linode.com/community/member/{!!}
+- name: Vultr Forum
+  url: https://discuss.vultr.com/u/{!!}
+- name: AWS Developer Forum
+  url: https://repost.aws/u/{!!}
+- name: Azure DevOps
+  url: https://dev.azure.com/{!!}
+- name: Google Cloud Community
+  url: https://www.googlecloudcommunity.com/gc/user/viewprofilepage/user-id/{!!}
+- name: IBM Developer
+  url: https://developer.ibm.com/profiles/{!!}
+- name: Oracle Community
+  url: https://community.oracle.com/profile/{!!}
+- name: SAP Community
+  url: https://people.sap.com/{!!}
+- name: Red Hat Developers
+  url: https://developers.redhat.com/u/{!!}
+- name: Fedora Project
+  url: https://discussion.fedoraproject.org/u/{!!}
+- name: Debian Wiki
+  url: https://wiki.debian.org/{!!}
+- name: Ubuntu Discourse
+  url: https://discourse.ubuntu.com/u/{!!}
+- name: Arch Linux Forum
+  url: https://bbs.archlinux.org/profile.php?id={!!}
+- name: Gentoo Forums
+  url: https://forums.gentoo.org/profile.php?mode=viewprofile&u={!!}
+- name: Slackware Forum
+  url: https://www.linuxquestions.org/questions/members/{!!}
+- name: OpenSUSE Forum
+  url: https://forums.opensuse.org/member.php/{!!}
+- name: Manjaro Forum
+  url: https://forum.manjaro.org/u/{!!}
+- name: EndeavourOS Forum
+  url: https://forum.endeavouros.com/u/{!!}
+- name: Linux Mint Forums
+  url: https://forums.linuxmint.com/memberlist.php?mode=viewprofile&u={!!}
+- name: Kali Linux Forum
+  url: https://forums.kali.org/member.php/{!!}
+- name: Parrot OS Forum
+  url: https://community.parrotsec.org/u/{!!}
+- name: BlackArch Forum
+  url: https://blackarch.org/forum/user/{!!}
+- name: Qubes OS Forum
+  url: https://forum.qubes-os.org/u/{!!}
+- name: Tails OS Forum
+  url: https://tails.boum.org/blueprint/user/{!!}
+- name: Whonix Forum
+  url: https://forums.whonix.org/u/{!!}
+- name: Intigriti
+  url: https://intigriti.com/researcher/{!!}
+- name: CTFtime
+  url: https://ctftime.org/team/{!!}
+- name: Root Me
+  url: https://www.root-me.org/{!!}
+- name: Hack The Box
+  url: https://app.hackthebox.com/profile/{!!}
+- name: TryHackMe
+  url: https://tryhackme.com/p/{!!}
+- name: Offensive Security
+  url: https://www.offsec.com/offsec-community/{!!}
+- name: PentesterLab
+  url: https://pentesterlab.com/profile/{!!}
+- name: Cybrary
+  url: https://www.cybrary.it/profile/{!!}
+- name: EC-Council Forum
+  url: https://www.eccouncil.org/members/{!!}
+- name: SANS Internet Storm Center
+  url: https://isc.sans.edu/people/{!!}
+- name: MalwareTips
+  url: https://malwaretips.com/members/{!!}
+- name: BleepingComputer Forum
+  url: https://www.bleepingcomputer.com/forums/u/{!!}
+- name: Wilders Security
+  url: https://www.wilderssecurity.com/members/{!!}
+- name: 0day.today
+  url: https://0day.today/author/{!!}
+- name: CXSecurity
+  url: https://cxsecurity.com/user/{!!}
+- name: KitPloit
+  url: https://www.kitploit.com/search?q={!!}
+- name: SecLists Archive
+  url: https://seclists.org/fulldisclosure/author/{!!}
+- name: NetSec Focus
+  url: https://netsecfocus.com/profile/{!!}
+- name: Reddit r/netsec
+  url: https://www.reddit.com/user/{!!}
+- name: Reddit r/hacking
+  url: https://www.reddit.com/user/{!!}
+- name: Reddit r/cybersecurity
+  url: https://www.reddit.com/user/{!!}
+- name: Raid Forums (archive)
+  url: https://raidforums.com/User-{!!}
+- name: Cracked.to
+  url: https://cracked.to/{!!}
+- name: LeakBase
+  url: https://leakbase.pw/user/{!!}
+- name: EvilZone
+  url: https://evilzone.org/index.php?action=profile;u={!!}
+- name: Black Hat World
+  url: https://www.blackhatworld.com/members/{!!}
+- name: SEOClerk
+  url: https://www.seoclerk.com/user/{!!}
+- name: WickedFire
+  url: https://www.wickedfire.com/members/{!!}
+- name: AffiliateFix
+  url: https://www.affiliatefix.com/members/{!!}
+- name: CPAElites
+  url: https://www.cpaelites.com/member.php?action=profile&uid={!!}
+- name: Digital Point
+  url: https://forums.digitalpoint.com/members/{!!}
+- name: SiteGround Forum
+  url: https://www.siteground.com/community/member/{!!}
+- name: DNForum
+  url: https://www.dnforum.com/members/{!!}
+- name: LET Forum
+  url: https://talk.lowendspirit.com/profile/{!!}
+- name: ServerFault
+  url: https://serverfault.com/users/{!!}
+- name: Spiceworks Community
+  url: https://community.spiceworks.com/people/{!!}
+- name: VMware Communities
+  url: https://communities.vmware.com/people/{!!}
+- name: Cisco Community
+  url: https://community.cisco.com/t5/user/viewprofilepage/user-id/{!!}
+- name: Mikrotik Forum
+  url: https://forum.mikrotik.com/memberlist.php?mode=viewprofile&u={!!}
+- name: Netgate Forum
+  url: https://forum.netgate.com/user/{!!}
+- name: Ubiquiti Community
+  url: https://community.ui.com/u/{!!}
+- name: Fortinet Community
+  url: https://community.fortinet.com/members/{!!}
+- name: Palo Alto Networks LIVEcommunity
+  url: https://live.paloaltonetworks.com/t5/user/viewprofilepage/user-id/{!!}
+- name: Sophos Community
+  url: https://community.sophos.com/members/{!!}
+- name: CheckMates (Check Point)
+  url: https://community.checkpoint.com/members/{!!}
+- name: Nintendo Network
+  url: https://miiverse.nintendo.net/users/{!!}
+- name: Rockstar Games Social Club
+  url: https://socialclub.rockstargames.com/member/{!!}
+- name: Origin (EA)
+  url: https://www.origin.com/profile/{!!}
+- name: Blizzard Battle.net
+  url: https://blizzard.com/{!!}
+- name: Valorant Tracker
+  url: https://tracker.gg/valorant/profile/riot/{!!}
+- name: Fortnite Tracker
+  url: https://fortnitetracker.com/profile/all/{!!}
+- name: Apex Legends Tracker
+  url: https://apex.tracker.gg/apex/profile/origin/{!!}
+- name: Overwatch Tracker
+  url: https://overwatchtracker.com/profile/pc/{!!}
+- name: PUBG Tracker
+  url: https://pubg.tracker.gg/profile/steam/{!!}
+- name: Rainbow Six Siege Tracker
+  url: https://r6.tracker.network/profile/id/{!!}
+- name: League of Legends OP.GG
+  url: https://www.op.gg/summoner/userName={!!}
+- name: Dota 2 OpenDota
+  url: https://www.opendota.com/players/{!!}
+- name: CS:GO Steam
+  url: https://csgo.steamanalyst.com/profile/{!!}
+- name: Team Fortress 2
+  url: https://steamcommunity.com/id/{!!}
+- name: Destiny Tracker
+  url: https://destinytracker.com/destiny-2/profile/{!!}
+- name: World of Warcraft Armory
+  url: https://worldofwarcraft.com/en-us/character/{!!}
+- name: Final Fantasy XIV Lodestone
+  url: https://na.finalfantasyxiv.com/lodestone/character/{!!}
+- name: Runescape
+  url: https://secure.runescape.com/m=hiscore/compare?user1={!!}
+- name: Old School Runescape
+  url: https://secure.runescape.com/m=hiscore_oldschool/compare?user1={!!}
+- name: Minecraft Official
+  url: https://minecraft.net/en-us/profile/{!!}
+- name: Hypixel
+  url: https://hypixel.net/members/{!!}
+- name: Planet Minecraft
+  url: https://www.planetminecraft.com/member/{!!}
+- name: Miniclip
+  url: https://www.miniclip.com/profile/{!!}
+- name: Kongregate
+  url: https://www.kongregate.com/accounts/{!!}
+- name: Armor Games
+  url: https://armorgames.com/user/{!!}
+- name: Giant Bomb
+  url: https://www.giantbomb.com/profile/{!!}
+- name: IGN
+  url: https://www.ign.com/boards/members/{!!}
+- name: GameSpot
+  url: https://www.gamespot.com/profile/{!!}
+- name: Polygon
+  url: https://www.polygon.com/users/{!!}
+- name: PC Gamer
+  url: https://www.pcgamer.com/profile/{!!}
+- name: Kotaku
+  url: https://kotaku.com/user/{!!}
+- name: Eurogamer
+  url: https://www.eurogamer.net/profiles/{!!}
+- name: VG247
+  url: https://www.vg247.com/user/{!!}
+- name: GameRant
+  url: https://gamerant.com/author/{!!}
+- name: Shacknews
+  url: https://www.shacknews.com/user/{!!}
+- name: Game Informer
+  url: https://www.gameinformer.com/user/{!!}
+- name: Destructoid
+  url: https://www.destructoid.com/?name={!!}
+- name: Metacritic
+  url: https://www.metacritic.com/user/{!!}
+- name: TrueAchievements
+  url: https://www.trueachievements.com/gamer/{!!}
+- name: TrueTrophies
+  url: https://www.truetrophies.com/gamer/{!!}
+- name: Speedrun.com
+  url: https://www.speedrun.com/user/{!!}
+- name: Smashboards
+  url: https://smashboards.com/members/{!!}
+- name: Chess.com
+  url: https://www.chess.com/member/{!!}
+- name: Lichess
+  url: https://lichess.org/@/{!!}
+- name: BoardGameGeek
+  url: https://boardgamegeek.com/user/{!!}
+- name: Tabletopia
+  url: https://tabletopia.com/playground/{!!}
+- name: Roll20
+  url: https://app.roll20.net/account/{!!}
+- name: Fantasy Grounds
+  url: https://www.fantasygrounds.com/forums/member.php?username={!!}
+- name: MTG Arena
+  url: https://magic.wizards.com/en/players/{!!}
+- name: Hearthstone Decks
+  url: https://hearthpwn.com/members/{!!}
+- name: Yu-Gi-Oh! Card Database
+  url: https://db.yugioh-card.com/yugiohdb/memberSearch.action?username={!!}
+- name: Pokemon Showdown
+  url: https://pokemonshowdown.com/users/{!!}
+- name: PokeHeroes
+  url: https://pokeheroes.com/user/{!!}
+- name: Neopets
+  url: https://www.neopets.com/userlookup.phtml?user={!!}
+- name: IMVU
+  url: https://www.imvu.com/catalog/web_mypage.php?user={!!}
+- name: Second Life
+  url: https://my.secondlife.com/{!!}
+- name: Habbo
+  url: https://www.habbo.com/profile/{!!}
+- name: Club Penguin Rewritten
+  url: https://play.cprewritten.net/user/{!!}
+- name: ToonTown Rewritten
+  url: https://www.toontownrewritten.com/users/{!!}
+- name: Poptropica
+  url: https://www.poptropica.com/profile/{!!}
+- name: Wizard101
+  url: https://www.wizard101.com/user/{!!}
+- name: Pirate101
+  url: https://www.pirate101.com/user/{!!}
+- name: AQWorlds
+  url: https://account.aq.com/CharPage?id={!!}
+- name: AdventureQuest
+  url: https://account.battleon.com/CharPage?id={!!}
+- name: DragonFable
+  url: https://account.battleon.com/CharPage?id={!!}
+- name: MechQuest
+  url: https://account.battleon.com/CharPage?id={!!}
+- name: HeroSmash
+  url: https://account.battleon.com/CharPage?id={!!}
+- name: Roblox DevForum
+  url: https://devforum.roblox.com/u/{!!}
+- name: GameBanana
+  url: https://gamebanana.com/members/{!!}
+- name: ModDB
+  url: https://www.moddb.com/members/{!!}
+- name: IndieDB
+  url: https://www.indiedb.com/members/{!!}
+- name: itch.io
+  url: https://itch.io/profile/{!!}
+- name: GameJolt
+  url: https://gamejolt.com/@{!!}
+- name: ArmorGames Community
+  url: https://armorgames.com/user/{!!}
+- name: Kongregate Forum
+  url: https://www.kongregate.com/accounts/{!!}
+- name: Big Fish Games
+  url: https://www.bigfishgames.com/profile/{!!}
+- name: Miniclip Community
+  url: https://www.miniclip.com/profile/{!!}
+- name: GOG
+  url: https://www.gog.com/u/{!!}
+- name: Humble Bundle
+  url: https://www.humblebundle.com/user/{!!}
+- name: Green Man Gaming
+  url: https://www.greenmangaming.com/profile/{!!}
+- name: Itch.io Dev
+  url: https://itch.io/profile/{!!}
+- name: IndieCade
+  url: https://www.indiecade.com/member/{!!}
+- name: PlayCanvas
+  url: https://playcanvas.com/{!!}
+- name: Construct Community
+  url: https://www.construct.net/en/forum/profile/{!!}
+- name: Unity Connect
+  url: https://connect.unity.com/u/{!!}
+- name: GameMaker Community
+  url: https://forum.yoyogames.com/index.php?members/{!!}
+- name: Godot Engine Q&A
+  url: https://godotengine.org/qa/user/{!!}
+- name: RPG Maker Forums
+  url: https://forums.rpgmakerweb.com/index.php?members/{!!}
+- name: Stencyl
+  url: https://community.stencyl.com/index.php?action=profile;u={!!}
+- name: OpenGameArt
+  url: https://opengameart.org/users/{!!}
+- name: TurboSquid
+  url: https://www.turbosquid.com/Search/Artists/{!!}
+- name: CGTrader
+  url: https://www.cgtrader.com/{!!}
+- name: 3DExport
+  url: https://3dexport.com/{!!}
+- name: DeviantArt Gaming
+  url: https://www.deviantart.com/{!!}
+- name: Indie Game Developers
+  url: https://indiegamedev.com/user/{!!}
+- name: Global Game Jam
+  url: https://globalgamejam.org/users/{!!}
+- name: Ludum Dare
+  url: https://ldjam.com/users/{!!}
+- name: GameDev.net
+  url: https://www.gamedev.net/members/{!!}
+- name: Dev.to Gaming
+  url: https://dev.to/{!!}
+- name: Stack Overflow GameDev
+  url: https://stackoverflow.com/users/{!!}
+- name: Reddit Gaming
+  url: https://www.reddit.com/user/{!!}
+- name: Game Revolution
+  url: https://www.gamerevolution.com/author/{!!}
+- name: N4G
+  url: https://n4g.com/user/{!!}
+- name: GameZone
+  url: https://www.gamezone.com/author/{!!}
+- name: TheSixthAxis
+  url: https://www.thesixthaxis.com/author/{!!}
+- name: PushSquare
+  url: https://www.pushsquare.com/users/{!!}
+- name: NintendoLife
+  url: https://www.nintendolife.com/users/{!!}
+- name: PureXbox
+  url: https://www.purexbox.com/users/{!!}
+- name: Time Extension
+  url: https://www.timeextension.com/users/{!!}
+- name: MyAnimeList Gaming
+  url: https://myanimelist.net/profile/{!!}
+- name: AniList Gaming
+  url: https://anilist.co/user/{!!}
+- name: Kitsu Gaming
+  url: https://kitsu.io/users/{!!}
+- name: OtakuBoards
+  url: https://www.otakuboards.com/members/{!!}
+- name: Visual Novels Database
+  url: https://vndb.org/u{!!}
+- name: F95Zone Games
+  url: https://f95zone.to/members/{!!}
+- name: LoversLab Gaming
+  url: https://www.loverslab.com/profile/{!!}
+- name: Nexus Mods
+  url: https://www.nexusmods.com/users/{!!}
+- name: ModTheSims
+  url: https://modthesims.info/m/{!!}
+- name: The Sims Forums
+  url: https://forums.thesims.com/en_US/profile/{!!}
+- name: Planet Zoo Forums
+  url: https://forums.frontier.co.uk/members/{!!}
+- name: Planet Coaster Forums
+  url: https://forums.planetcoaster.com/members/{!!}
+- name: Elite Dangerous Forums
+  url: https://forums.frontier.co.uk/members/{!!}
+- name: Kerbal Space Program
+  url: https://forum.kerbalspaceprogram.com/index.php?/profile/{!!}
+- name: Factorio Forums
+  url: https://forums.factorio.com/memberlist.php?mode=viewprofile&u={!!}
+- name: "Cities: Skylines Forum"
+  url: https://forum.paradoxplaza.com/forum/members/{!!}
+- name: Stellaris Forum
+  url: https://forum.paradoxplaza.com/forum/members/{!!}
+- name: Hearts of Iron IV Forum
+  url: https://forum.paradoxplaza.com/forum/members/{!!}
+- name: Europa Universalis IV Forum
+  url: https://forum.paradoxplaza.com/forum/members/{!!}
+- name: Crusader Kings III Forum
+  url: https://forum.paradoxplaza.com/forum/members/{!!}
+- name: Victoria 3 Forum
+  url: https://forum.paradoxplaza.com/forum/members/{!!}
+- name: Football Manager Forums
+  url: https://community.sigames.com/profile/{!!}
+- name: Pro Evolution Soccer Forums
+  url: https://www.evo-web.co.uk/members/{!!}
+- name: FIFA Forums
+  url: https://fifaforums.easports.com/en/profile/{!!}
+- name: NBA 2K Forums
+  url: https://forums.2k.com/member.php?username={!!}
+- name: Madden NFL Forums
+  url: https://forums.ea.com/en/madden-nfl/profile/{!!}
+- name: NHL Forums
+  url: https://forums.ea.com/en/nhl/profile/{!!}
+- name: MLB The Show Forums
+  url: https://forums.theshownation.com/user/{!!}
+- name: Rocket League Tracker
+  url: https://rocketleague.tracker.network/profile/{!!}
+- name: Paladins Tracker
+  url: https://paladins.guru/profile/{!!}
+- name: Smite Guru
+  url: https://smite.guru/profile/{!!}
+- name: Heroes of the Storm
+  url: https://heroesprofile.com/Player/Profile/{!!}
+- name: StarCraft II
+  url: https://starcraft2.com/en-us/profile/{!!}
+- name: Warcraft III Reforged
+  url: https://us.forums.blizzard.com/en/warcraft3/u/{!!}
+- name: Diablo III
+  url: https://us.diablo3.blizzard.com/en/profile/{!!}
+- name: Black Desert Online
+  url: https://www.naeu.playblackdesert.com/en-US/Profile/{!!}
+- name: ArcheAge
+  url: https://forums.archeagegame.com/member.php?username={!!}
+- name: EVE Online
+  url: https://forums.eveonline.com/u/{!!}
+- name: No Man’s Sky Hub
+  url: https://nms-hub.com/profile/{!!}
+- name: Elite Dangerous Inara
+  url: https://inara.cz/cmdr/{!!}
+- name: War Thunder
+  url: https://warthunder.com/en/community/userinfo/?name={!!}
+- name: World of Tanks
+  url: https://worldoftanks.com/en/community/accounts/{!!}
+- name: World of Warships
+  url: https://worldofwarships.com/en/community/accounts/{!!}
+- name: World of Warplanes
+  url: https://worldofwarplanes.com/en/community/accounts/{!!}
+- name: Crossout
+  url: https://crossout.net/en/profile/{!!}
+- name: Enlisted
+  url: https://enlisted.net/en/profile/{!!}
+- name: Escape from Tarkov
+  url: https://www.escapefromtarkov.com/profile/{!!}
+- name: DayZ
+  url: https://forums.dayz.com/profile/{!!}
+- name: Rust
+  url: https://rust.facepunch.com/profile/{!!}
+- name: "Ark: Survival Evolved"
+  url: https://survivetheark.com/index.php?/profile/{!!}
+- name: Conan Exiles
+  url: https://forums.funcom.com/u/{!!}
+- name: The Forest
+  url: https://endnightgames.com/community/profile/{!!}
+- name: Subnautica
+  url: https://unknownworlds.com/profile/{!!}
+- name: Terraria Forum
+  url: https://forums.terraria.org/index.php?members/{!!}
+- name: Stardew Valley Forum
+  url: https://forums.stardewvalley.net/members/{!!}
+- name: Don’t Starve Together
+  url: https://forums.kleientertainment.com/profile/{!!}
+- name: Oxygen Not Included
+  url: https://forums.kleientertainment.com/profile/{!!}
+- name: RimWorld
+  url: https://ludeon.com/forums/index.php?action=profile;u={!!}
+- name: Factorio Mods
+  url: https://mods.factorio.com/user/{!!}
+- name: Walmart Marketplace
+  url: https://marketplace.walmart.com/seller/{!!}
+- name: eBid
+  url: https://www.ebid.net/us/users/{!!}
+- name: 1stdibs
+  url: https://www.1stdibs.com/dealers/{!!}
+- name: ArtPal
+  url: https://www.artpal.com/{!!}
+- name: Saatchi Art
+  url: https://www.saatchiart.com/{!!}
+- name: Zibbet
+  url: https://www.zibbet.com/{!!}
+- name: Handmade at Amazon
+  url: https://www.amazon.com/handmade/{!!}
+- name: Big Cartel
+  url: https://www.bigcartel.com/{!!}
+- name: Shopify
+  url: https://{!!}.myshopify.com
+- name: WooCommerce
+  url: https://woocommerce.com/store/{!!}
+- name: Weebly eCommerce
+  url: https://{!!}.weebly.com
+- name: Squarespace Store
+  url: https://{!!}.squarespace.com
+- name: Volusion
+  url: https://{!!}.volusion.com
+- name: 3dcart
+  url: https://{!!}.3dcartstores.com
+- name: Wix Stores
+  url: https://{!!}.wixsite.com/store
+- name: Shift4Shop
+  url: https://{!!}.shift4shop.com
+- name: Faire
+  url: https://www.faire.com/direct/{!!}
+- name: Tindie
+  url: https://www.tindie.com/stores/{!!}
+- name: Folksy
+  url: https://folksy.com/shops/{!!}
+- name: Not On The High Street
+  url: https://www.notonthehighstreet.com/{!!}
+- name: eCrater
+  url: https://{!!}.ecrater.com
+- name: iOffer
+  url: https://www.ioffer.com/selling/{!!}
+- name: GunBroker
+  url: https://www.gunbroker.com/{!!}
+- name: AutoTrader
+  url: https://www.autotrader.com/{!!}
+- name: Cars.com
+  url: https://www.cars.com/dealers/{!!}
+- name: CarGurus
+  url: https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?dealerName={!!}
+- name: Bring a Trailer
+  url: https://bringatrailer.com/member/{!!}
+- name: Hemmings
+  url: https://www.hemmings.com/u/{!!}
+- name: Cycle Trader
+  url: https://www.cycletrader.com/{!!}
+- name: RV Trader
+  url: https://www.rvtrader.com/{!!}
+- name: Boat Trader
+  url: https://www.boattrader.com/{!!}
+- name: PartsGeek
+  url: https://www.partsgeek.com/{!!}
+- name: Reverb LP
+  url: https://lp.reverb.com/user/{!!}
+- name: Disc Makers
+  url: https://members.discmakers.com/{!!}
+- name: Threadless
+  url: https://www.threadless.com/shop/{!!}
+- name: Spreadshirt
+  url: https://shop.spreadshirt.com/{!!}
+- name: Teespring
+  url: https://teespring.com/stores/{!!}
+- name: Redbubble
+  url: https://www.redbubble.com/people/{!!}
+- name: CafePress
+  url: https://www.cafepress.com/{!!}
+- name: Zazzle
+  url: https://www.zazzle.com/store/{!!}
+- name: Society6
+  url: https://society6.com/{!!}
+- name: Fine Art America
+  url: https://fineartamerica.com/profiles/{!!}
+- name: Pixels
+  url: https://pixels.com/profiles/{!!}
+- name: TeePublic
+  url: https://www.teepublic.com/user/{!!}
+- name: SunFrog
+  url: https://www.sunfrog.com/{!!}
+- name: Merch by Amazon
+  url: https://merch.amazon.com/user/{!!}
+- name: Printify
+  url: https://printify.com/seller/{!!}
+- name: Printful
+  url: https://www.printful.com/store/{!!}
+- name: Gooten
+  url: https://gooten.com/store/{!!}
+- name: Shapeways
+  url: https://www.shapeways.com/shops/{!!}
+- name: Thingiverse
+  url: https://www.thingiverse.com/{!!}
+- name: MyMiniFactory
+  url: https://www.myminifactory.com/users/{!!}
+- name: Cults3D
+  url: https://cults3d.com/en/users/{!!}
+- name: Pinshape
+  url: https://pinshape.com/users/{!!}
+- name: Renderosity
+  url: https://www.renderosity.com/users/id/{!!}
+- name: Creative Market
+  url: https://creativemarket.com/{!!}
+- name: Envato Market
+  url: https://themeforest.net/user/{!!}
+- name: GraphicRiver
+  url: https://graphicriver.net/user/{!!}
+- name: AudioJungle
+  url: https://audiojungle.net/user/{!!}
+- name: VideoHive
+  url: https://videohive.net/user/{!!}
+- name: CodeCanyon
+  url: https://codecanyon.net/user/{!!}
+- name: PhotoDune
+  url: https://photodune.net/user/{!!}
+- name: 500px Marketplace
+  url: https://marketplace.500px.com/{!!}
+- name: SmugMug
+  url: https://www.smugmug.com/{!!}
+- name: Alamy
+  url: https://www.alamy.com/portfolio/{!!}
+- name: Getty Images
+  url: https://www.gettyimages.com/photos/{!!}
+- name: Shutterstock
+  url: https://www.shutterstock.com/g/{!!}
+- name: Dreamstime
+  url: https://www.dreamstime.com/{!!}-portfolios
+- name: iStock
+  url: https://www.istockphoto.com/portfolio/{!!}
+- name: Pond5
+  url: https://www.pond5.com/artist/{!!}
+- name: 123RF
+  url: https://www.123rf.com/profile_{!!}.html
+- name: EyeEm
+  url: https://www.eyeem.com/u/{!!}
+- name: Foap
+  url: https://www.foap.com/users/{!!}
+- name: Canva Creators
+  url: https://www.canva.com/p/{!!}
+- name: Patternbank
+  url: https://patternbank.com/{!!}
+- name: DesignCuts
+  url: https://www.designcuts.com/{!!}
+- name: TeeChip
+  url: https://teechip.com/stores/{!!}
+- name: SunFrog Shirts
+  url: https://www.sunfrog.com/{!!}
+- name: Joom
+  url: https://www.joom.com/en/users/{!!}
+- name: Instagram Shopping
+  url: https://www.instagram.com/{!!}/shop
+- name: TikTok Shop
+  url: https://www.tiktok.com/@{!!}/shop
+- name: YouTube Shopping
+  url: https://www.youtube.com/{!!}/store
+- name: WeChat Stores
+  url: https://store.wechat.com/{!!}
+- name: Line Shopping
+  url: https://store.line.me/{!!}
+- name: Kakao Makers
+  url: https://store.kakao.com/{!!}
+- name: Coupang
+  url: https://store.coupang.com/{!!}
+- name: Gmarket
+  url: https://www.gmarket.co.kr/store/{!!}
+- name: Interpark
+  url: https://shopping.interpark.com/{!!}
+- name: 11Street
+  url: https://www.11st.co.kr/seller/{!!}
+- name: Qoo10
+  url: https://www.qoo10.sg/shop/{!!}
+- name: Tokopedia
+  url: https://www.tokopedia.com/{!!}
+- name: Bukalapak
+  url: https://www.bukalapak.com/u/{!!}
+- name: Blibli
+  url: https://www.blibli.com/merchant/{!!}
+- name: JD.id
+  url: https://www.jd.id/shop/{!!}
+- name: Tiki
+  url: https://tiki.vn/cua-hang/{!!}
+- name: Sendo
+  url: https://www.sendo.vn/shop/{!!}
+- name: Zalora
+  url: https://www.zalora.com/{!!}
+- name: Otto
+  url: https://www.otto.de/shop/{!!}
+- name: Allegro
+  url: https://allegro.pl/uzytkownik/{!!}
+- name: Catawiki
+  url: https://www.catawiki.com/lots/{!!}
+- name: Chrono24
+  url: https://www.chrono24.com/dealer/{!!}
+- name: Grailed Women
+  url: https://www.grailed.com/womens/{!!}
+- name: Heroine
+  url: https://www.heroine.com/{!!}
+- name: SSENSE
+  url: https://www.ssense.com/en-us/{!!}
+- name: Mr Porter
+  url: https://www.mrporter.com/{!!}
+- name: MatchesFashion
+  url: https://www.matchesfashion.com/{!!}
+- name: MyTheresa
+  url: https://www.mytheresa.com/{!!}
+- name: Shopbop
+  url: https://www.shopbop.com/{!!}
+- name: Revolve
+  url: https://www.revolve.com/{!!}
+- name: PrettyLittleThing
+  url: https://www.prettylittlething.com/{!!}
+- name: SHEIN
+  url: https://www.shein.com/store/{!!}
+- name: Romwe
+  url: https://www.romwe.com/store/{!!}
+- name: Fashion Nova
+  url: https://www.fashionnova.com/{!!}
+- name: Princess Polly
+  url: https://www.princesspolly.com/{!!}
+- name: White Fox Boutique
+  url: https://whitefoxboutique.com/{!!}
+- name: Tiger Mist
+  url: https://tigermist.com.au/{!!}
+- name: Verge Girl
+  url: https://vergegirl.com/{!!}
+- name: Beginning Boutique
+  url: https://beginningboutique.com/{!!}
+- name: Peppermayo
+  url: https://peppermayo.com/{!!}
+- name: Showpo
+  url: https://www.showpo.com/{!!}
+- name: Missguided
+  url: https://www.missguidedus.com/{!!}
+- name: Forever 21 Online
+  url: https://www.forever21.com/{!!}
+- name: Uniqlo Online
+  url: https://www.uniqlo.com/{!!}
+- name: Zara Online
+  url: https://www.zara.com/{!!}
+- name: H&M Online
+  url: https://www2.hm.com/{!!}
+- name: Mango Online
+  url: https://shop.mango.com/{!!}
+- name: GAP Online
+  url: https://www.gap.com/{!!}
+- name: Levi's Online
+  url: https://www.levi.com/{!!}
+- name: Nike Store
+  url: https://www.nike.com/{!!}
+- name: Adidas Store
+  url: https://www.adidas.com/{!!}
+- name: Puma Store
+  url: https://us.puma.com/{!!}
+- name: Reebok Store
+  url: https://www.reebok.com/{!!}
+- name: Under Armour Store
+  url: https://www.underarmour.com/{!!}
+- name: Columbia Sportswear
+  url: https://www.columbia.com/{!!}
+- name: Patagonia Online
+  url: https://www.patagonia.com/{!!}
+- name: North Face Online
+  url: https://www.thenorthface.com/{!!}
+- name: Decathlon Online
+  url: https://www.decathlon.com/{!!}
+- name: Dick's Sporting Goods
+  url: https://www.dickssportinggoods.com/{!!}
+- name: Academy Sports
+  url: https://www.academy.com/{!!}
+- name: Bass Pro Shops
+  url: https://www.basspro.com/{!!}
+- name: Cabela's
+  url: https://www.cabelas.com/{!!}
+- name: REI Co-op
+  url: https://www.rei.com/{!!}
+- name: Backcountry
+  url: https://www.backcountry.com/{!!}
+- name: Moosejaw
+  url: https://www.moosejaw.com/{!!}
+- name: Campmor
+  url: https://www.campmor.com/{!!}
+- name: Sierra Trading Post
+  url: https://www.sierra.com/{!!}
+- name: L.L.Bean
+  url: https://www.llbean.com/{!!}
+- name: Lands' End
+  url: https://www.landsend.com/{!!}
+- name: Orvis
+  url: https://www.orvis.com/{!!}
+- name: Eddie Bauer
+  url: https://www.eddiebauer.com/{!!}
+- name: Filson
+  url: https://www.filson.com/{!!}
+- name: Duluth Trading
+  url: https://www.duluthtrading.com/{!!}
+- name: Carhartt
+  url: https://www.carhartt.com/{!!}
+- name: WorkwearHub
+  url: https://www.workwearhub.com.au/{!!}
+- name: Cash App
+  url: https://cash.app/${!!}
+- name: Monzo
+  url: https://monzo.me/{!!}
+- name: N26
+  url: https://n26.com/en-eu/{!!}
+- name: Starling Bank
+  url: https://www.starlingbank.com/{!!}
+- name: Chime
+  url: https://www.chime.com/{!!}
+- name: Zelle
+  url: https://www.zellepay.com/{!!}
+- name: Google Pay
+  url: https://pay.google.com/payments/u/0/home/{!!}
+- name: Apple Pay
+  url: https://www.apple.com/apple-pay/{!!}
+- name: Samsung Pay
+  url: https://www.samsung.com/pay/{!!}
+- name: Alipay
+  url: https://www.alipay.com/{!!}
+- name: WeChat Pay
+  url: https://pay.weixin.qq.com/{!!}
+- name: EcoPayz
+  url: https://www.ecopayz.com/{!!}
+- name: Paysend
+  url: https://paysend.com/en/user/{!!}
+- name: Remitly
+  url: https://www.remitly.com/{!!}
+- name: WorldRemit
+  url: https://www.worldremit.com/en/{!!}
+- name: OFX
+  url: https://www.ofx.com/{!!}
+- name: Xoom
+  url: https://www.xoom.com/{!!}
+- name: Azimo
+  url: https://azimo.com/en/{!!}
+- name: BitPay
+  url: https://bitpay.com/{!!}
+- name: Coinbase
+  url: https://www.coinbase.com/{!!}
+- name: Binance Pay
+  url: https://pay.binance.com/{!!}
+- name: Kraken
+  url: https://www.kraken.com/u/{!!}
+- name: Gemini
+  url: https://www.gemini.com/{!!}
+- name: KuCoin
+  url: https://www.kucoin.com/{!!}
+- name: Huobi
+  url: https://www.huobi.com/{!!}
+- name: OKX
+  url: https://www.okx.com/{!!}
+- name: Bybit
+  url: https://www.bybit.com/{!!}
+- name: Crypto.com Pay
+  url: https://crypto.com/pay/{!!}
+- name: Bitstamp
+  url: https://www.bitstamp.net/{!!}
+- name: Bitfinex
+  url: https://www.bitfinex.com/{!!}
+- name: Gate.io
+  url: https://www.gate.io/{!!}
+- name: Poloniex
+  url: https://www.poloniex.com/{!!}
+- name: Bittrex
+  url: https://bittrex.com/{!!}
+- name: ShapeShift
+  url: https://shapeshift.com/{!!}
+- name: Uphold
+  url: https://uphold.com/{!!}
+- name: Paxful
+  url: https://paxful.com/{!!}
+- name: LocalBitcoins
+  url: https://localbitcoins.com/accounts/profile/{!!}
+- name: CoinPayments
+  url: https://www.coinpayments.net/user/{!!}
+- name: MoonPay
+  url: https://www.moonpay.com/{!!}
+- name: Simplex
+  url: https://www.simplex.com/{!!}
+- name: Wyre
+  url: https://www.sendwyre.com/{!!}
+- name: SubscribeStar
+  url: https://www.subscribestar.com/{!!}
+- name: Liberapay
+  url: https://liberapay.com/{!!}
+- name: JustForFans
+  url: https://justfor.fans/{!!}
+- name: Podia
+  url: https://www.podia.com/{!!}
+- name: Sellfy
+  url: https://sellfy.com/{!!}
+- name: Itch.io
+  url: https://{!!}.itch.io
+- name: Payhip
+  url: https://payhip.com/{!!}
+- name: Memberful
+  url: https://memberful.com/{!!}
+- name: Crowdcube
+  url: https://www.crowdcube.com/investment/{!!}
+- name: Seedrs
+  url: https://www.seedrs.com/{!!}
+- name: PledgeMusic
+  url: https://www.pledgemusic.com/{!!}
+- name: ArtistShare
+  url: https://www.artistshare.com/{!!}
+- name: CircleUp
+  url: https://circleup.com/{!!}
+- name: Crowdfunder US
+  url: https://www.crowdfunder.com/{!!}
+- name: Mainvest
+  url: https://mainvest.com/{!!}
+- name: Honeyfund
+  url: https://www.honeyfund.com/{!!}
+- name: Plumfund
+  url: https://www.plumfund.com/{!!}
+- name: GoGetFunding
+  url: https://gogetfunding.com/{!!}
+- name: GiveIndia
+  url: https://donate.giveindia.org/{!!}
+- name: Classy
+  url: https://www.classy.org/{!!}
+- name: Paytm
+  url: https://paytm.me/{!!}
+- name: PhonePe
+  url: https://www.phonepe.com/{!!}
+- name: BHIM
+  url: https://www.bhimupi.org.in/{!!}
+- name: MobiKwik
+  url: https://www.mobikwik.com/{!!}
+- name: Freecharge
+  url: https://www.freecharge.in/{!!}
+- name: Razorpay
+  url: https://razorpay.com/{!!}
+- name: Instamojo
+  url: https://www.instamojo.com/{!!}
+- name: BillDesk
+  url: https://www.billdesk.com/{!!}
+- name: PayU
+  url: https://www.payu.in/{!!}
+- name: Citrus Pay
+  url: https://www.citruspay.com/{!!}
+- name: EBS
+  url: https://www.ebs.in/{!!}
+- name: AirPay
+  url: https://www.airpay.co.in/{!!}
+- name: PayKun
+  url: https://www.paykun.com/{!!}
+- name: Cashfree
+  url: https://www.cashfree.com/{!!}
+- name: Instapay
+  url: https://www.instapay.in/{!!}
+- name: Atom Paynetz
+  url: https://www.atomtech.in/{!!}
+- name: JusPay
+  url: https://juspay.in/{!!}
+- name: Omise
+  url: https://www.omise.co/{!!}
+- name: PayMaya
+  url: https://paymaya.com/{!!}
+- name: GCash
+  url: https://www.gcash.com/{!!}
+- name: Maya Business
+  url: https://www.maya.ph/{!!}
+- name: Coins.ph
+  url: https://www.coins.ph/{!!}
+- name: PayTabs
+  url: https://site.paytabs.com/{!!}
+- name: HyperPay
+  url: https://www.hyperpay.com/{!!}
+- name: Fawry
+  url: https://www.fawry.com/{!!}
+- name: MyFatoorah
+  url: https://www.myfatoorah.com/{!!}
+- name: Telr
+  url: https://www.telr.com/{!!}
+- name: CCAvenue
+  url: https://www.ccavenue.com/{!!}
+- name: BitOasis
+  url: https://bitoasis.net/{!!}
+- name: Rain
+  url: https://www.rain.bh/{!!}
+- name: Luno
+  url: https://www.luno.com/{!!}
+- name: VALR
+  url: https://www.valr.com/{!!}
+- name: Yellow Card
+  url: https://www.yellowcard.io/{!!}
+- name: Flutterwave
+  url: https://flutterwave.com/{!!}
+- name: Paystack
+  url: https://paystack.com/{!!}
+- name: Interswitch
+  url: https://www.interswitchgroup.com/{!!}
+- name: Opay
+  url: https://opayweb.com/{!!}
+- name: PalmPay
+  url: https://palmpay.com/{!!}
+- name: Chipper Cash
+  url: https://chippercash.com/{!!}
+- name: Eversend
+  url: https://eversend.co/{!!}
+- name: Wave
+  url: https://wave.com/{!!}
+- name: Sendwave
+  url: https://www.sendwave.com/{!!}
+- name: M-Pesa
+  url: https://www.safaricom.co.ke/m-pesa/{!!}
+- name: Airtel Money
+  url: https://www.airtelmoney.com/{!!}
+- name: Orange Money
+  url: https://www.orange.com/en/orange-money/{!!}
+- name: MTN MoMo
+  url: https://mtn.com/momo/{!!}
+- name: EcoCash
+  url: https://www.ecocash.co.zw/{!!}
+- name: TrueMoney
+  url: https://truemoney.com/{!!}
+- name: GrabPay
+  url: https://www.grab.com/pay/{!!}
+- name: ShopeePay
+  url: https://shopeepay.com/{!!}
+- name: Lazada Wallet
+  url: https://www.lazada.com/wallet/{!!}
+- name: Dana
+  url: https://www.dana.id/{!!}
+- name: LinkAja
+  url: https://www.linkaja.id/{!!}
+- name: OVO
+  url: https://www.ovo.id/{!!}
+- name: Gojek Pay
+  url: https://www.gojek.com/gopay/{!!}
+- name: MoMo Wallet
+  url: https://momo.vn/{!!}
+- name: ZaloPay
+  url: https://zalopay.vn/{!!}
+- name: ViettelPay
+  url: https://viettelpay.vn/{!!}
+- name: PayHere
+  url: https://www.payhere.lk/{!!}
+- name: eSewa
+  url: https://esewa.com.np/{!!}
+- name: Khalti
+  url: https://khalti.com/{!!}
+- name: IME Pay
+  url: https://imepay.com.np/{!!}
+- name: Prabhu Pay
+  url: https://prabhupay.com/{!!}
+- name: QPay
+  url: https://www.qpay.mn/{!!}
+- name: MonPay
+  url: https://www.monpay.mn/{!!}
+- name: Yape
+  url: https://www.yape.com.pe/{!!}
+- name: Plin
+  url: https://plin.pe/{!!}
+- name: PagoEfectivo
+  url: https://pagoefectivo.pe/{!!}
+- name: Mercado Pago
+  url: https://www.mercadopago.com/{!!}
+- name: PicPay
+  url: https://www.picpay.com/{!!}
+- name: PagSeguro
+  url: https://pagseguro.uol.com.br/{!!}
+- name: Nubank
+  url: https://nubank.com.br/{!!}
+- name: Banco Inter
+  url: https://bancointer.com.br/{!!}
+- name: Bradesco
+  url: https://banco.bradesco/{!!}
+- name: Itaú
+  url: https://www.itau.com.br/{!!}
+- name: Santander Brasil
+  url: https://www.santander.com.br/{!!}
+- name: BBVA
+  url: https://www.bbva.com/{!!}
+- name: Banco Santander
+  url: https://www.santander.com/{!!}
+- name: CaixaBank
+  url: https://www.caixabank.com/{!!}
+- name: ING
+  url: https://www.ing.com/{!!}
+- name: Deutsche Bank
+  url: https://www.db.com/{!!}
+- name: HSBC
+  url: https://www.hsbc.com/{!!}
+- name: Barclays
+  url: https://www.barclays.co.uk/{!!}
+- name: Lloyds Bank
+  url: https://www.lloydsbank.com/{!!}
+- name: NatWest
+  url: https://www.natwest.com/{!!}
+- name: RBS
+  url: https://www.rbs.co.uk/{!!}
+- name: Halifax
+  url: https://www.halifax.co.uk/{!!}
+- name: TSB
+  url: https://www.tsb.co.uk/{!!}
+- name: Metro Bank
+  url: https://www.metrobankonline.co.uk/{!!}
+- name: Monese
+  url: https://monese.com/{!!}
+- name: Tandem Bank
+  url: https://www.tandem.co.uk/{!!}
+- name: Atom Bank
+  url: https://www.atombank.co.uk/{!!}
+- name: Curve
+  url: https://www.curve.com/{!!}
+- name: ClearPay
+  url: https://www.clearpay.co.uk/{!!}
+- name: Afterpay
+  url: https://www.afterpay.com/{!!}
+- name: Klarna
+  url: https://www.klarna.com/{!!}
+- name: Affirm
+  url: https://www.affirm.com/{!!}
+- name: Sezzle
+  url: https://www.sezzle.com/{!!}
+- name: Splitit
+  url: https://www.splitit.com/{!!}
+- name: Zip Pay
+  url: https://zip.co/{!!}
+- name: Laybuy
+  url: https://www.laybuy.com/{!!}
+- name: Hornet
+  url: https://hornet.com/{!!}
+- name: Raya
+  url: https://www.rayatheapp.com/{!!}
+- name: Luxy
+  url: https://www.onluxy.com/{!!}
+- name: The League
+  url: https://www.theleague.com/{!!}
+- name: Happier
+  url: https://www.happierapp.com/{!!}
+- name: Once
+  url: https://www.once-dating.com/{!!}
+- name: Wingman
+  url: https://www.wingmanapp.com/{!!}
+- name: Taimi
+  url: https://taimi.com/{!!}
+- name: Blued
+  url: https://www.blued.com/{!!}
+- name: FriendFinder
+  url: https://www.friendfinder.com/{!!}
+- name: BeNaughty
+  url: https://www.benaughty.com/{!!}
+- name: CasualX
+  url: https://casualx.com/{!!}
+- name: Whiplr
+  url: https://www.whiplr.com/{!!}
+- name: NoStringsAttached
+  url: https://www.nostringsattached.com/{!!}
+- name: SecretBenefits
+  url: https://www.secretbenefits.com/{!!}
+- name: Sugardaddymeet
+  url: https://www.sugardaddymeet.com/{!!}
+- name: Seeking
+  url: https://www.seeking.com/{!!}
+- name: SugarBook
+  url: https://thesugarbook.com/{!!}
+- name: Sudy
+  url: https://www.sudy.app/{!!}
+- name: MissTravel
+  url: https://www.misstravel.com/{!!}
+- name: TravelHostDate
+  url: https://www.travelhostdate.com/{!!}
+- name: BharatMatrimony
+  url: https://www.bharatmatrimony.com/{!!}
+- name: Matrimony.com
+  url: https://www.matrimony.com/{!!}
+- name: QuackQuack
+  url: https://www.quackquack.in/{!!}
+- name: HappierMatrimony
+  url: https://www.happiermatrimony.com/{!!}
+- name: Muzz
+  url: https://muzmatch.com/{!!}
+- name: Nikah.com
+  url: https://www.nikah.com/{!!}
+- name: NikahExplorer
+  url: https://www.nikahexplorer.com/{!!}
+- name: IranianSingles
+  url: https://iraniansingles.com/{!!}
+- name: LoveHabibi
+  url: https://www.lovehabibi.com/{!!}
+- name: ColombianCupid
+  url: https://www.colombiancupid.com/{!!}
+- name: DominicanCupid
+  url: https://www.dominicancupid.com/{!!}
+- name: CaribbeanCupid
+  url: https://www.caribbeancupid.com/{!!}
+- name: RussianCupid
+  url: https://www.russiancupid.com/{!!}
+- name: UkraineDate
+  url: https://www.ukrainedate.com/{!!}
+- name: ChinaLoveCupid
+  url: https://www.chinalovecupid.com/{!!}
+- name: JapanCupid
+  url: https://www.japancupid.com/{!!}
+- name: KoreanCupid
+  url: https://www.koreancupid.com/{!!}
+- name: VietSingle
+  url: https://www.vietsingle.com/{!!}
+- name: VietnamCupid
+  url: https://www.vietnamcupid.com/{!!}
+- name: CambodianCupid
+  url: https://www.cambodiancupid.com/{!!}
+- name: IndonesianCupid
+  url: https://www.indonesiancupid.com/{!!}
+- name: MalaysianCupid
+  url: https://www.malaysiancupid.com/{!!}
+- name: SingaporeLoveLinks
+  url: https://www.singaporelovelinks.com/{!!}
+- name: HongKongCupid
+  url: https://www.hongkongcupid.com/{!!}
+- name: LoveMe
+  url: https://www.loveme.com/{!!}
+- name: A Foreign Affair
+  url: https://www.love-intl.com/{!!}
+- name: DateInAsia
+  url: https://www.dateinasia.com/{!!}
+- name: AsianDating
+  url: https://www.asiandating.com/{!!}
+- name: TrulyAsian
+  url: https://www.trulyasian.com/{!!}
+- name: ChristianCafe
+  url: https://www.christiancafe.com/{!!}
+- name: CatholicMatch
+  url: https://www.catholicmatch.com/{!!}
+- name: LDSPlanet
+  url: https://www.ldsplanet.com/{!!}
+- name: JSwipe
+  url: https://www.jswipeapp.com/{!!}
+- name: Chappy
+  url: https://www.chappyapp.com/{!!}
+- name: Surge
+  url: https://www.surgeapp.co/{!!}
+- name: Romeo
+  url: https://www.planetromeo.com/{!!}
+- name: Jack'd
+  url: https://www.jackd.mobi/{!!}
+- name: Adam4Adam
+  url: https://www.adam4adam.com/{!!}
+- name: Recon
+  url: https://www.recon.com/{!!}
+- name: GROWLr
+  url: https://www.growlrapp.com/{!!}
+- name: Daddyhunt
+  url: https://www.daddyhunt.com/{!!}
+- name: SilverSingles
+  url: https://www.silversingles.com/{!!}
+- name: OurTime
+  url: https://www.ourtime.com/{!!}
+- name: SeniorMatch
+  url: https://www.seniormatch.com/{!!}
+- name: Stitch
+  url: https://www.stitch.net/{!!}
+- name: Lumen
+  url: https://www.lumenapp.com/{!!}
+- name: DateMyAge
+  url: https://www.datemyage.com/{!!}
+- name: SingleParentMeet
+  url: https://www.singleparentmeet.com/{!!}
+- name: LargeFriends
+  url: https://www.largefriends.com/{!!}
+- name: WooPlus
+  url: https://www.wooplus.com/{!!}
+- name: MuddyMatches
+  url: https://www.muddymatches.co.uk/{!!}
+- name: LoveAndFriends
+  url: https://www.loveandfriends.com/{!!}
+- name: CopSingles
+  url: https://www.copsingles.com/{!!}
+- name: DateACowboy
+  url: https://www.dateacowboy.com/{!!}
+- name: ChristianCupid
+  url: https://www.christiancupid.com/{!!}
+- name: BLK
+  url: https://www.blk-app.com/{!!}
+- name: SoulSwipe
+  url: https://www.soulswipe.com/{!!}
+- name: InterracialCupid
+  url: https://www.interracialcupid.com/{!!}
+- name: InterracialDatingCentral
+  url: https://www.interracialdatingcentral.com/{!!}
+- name: DateWhoYouWant
+  url: https://www.datewhoyouwant.com/{!!}
+- name: EliteSingles
+  url: https://www.elitesingles.com/{!!}
+- name: AcademicSingles
+  url: https://www.academicsingles.com/{!!}
+- name: BeautifulPeople
+  url: https://www.beautifulpeople.com/{!!}
+- name: MillionaireMatch
+  url: https://www.millionairematch.com/{!!}
+- name: Sugardaters
+  url: https://www.sugardaters.com/{!!}
+- name: RichMeetBeautiful
+  url: https://www.richmeetbeautiful.com/{!!}
+- name: SeekingArrangementAU
+  url: https://www.seeking.com/au/{!!}
+- name: Sugardaddy.com
+  url: https://www.sugardaddy.com/{!!}
+- name: Sugarmodels
+  url: https://www.sugarmodels.com/{!!}
+- name: CarrotDating
+  url: https://www.carrotdating.com/{!!}
+- name: CougarLife
+  url: https://www.cougarlife.com/{!!}
+- name: OlderWomenDating
+  url: https://www.olderwomendating.com/{!!}
+- name: ToyboyWarehouse
+  url: https://www.toyboywarehouse.com/{!!}
+- name: DateOlderWomen
+  url: https://www.dateolderwomen.com/{!!}
+- name: MatchAffinity
+  url: https://www.matchaffinity.com/{!!}
+- name: ParPerfeito
+  url: https://www.parperfeito.com.br/{!!}
+- name: Amigos.com
+  url: https://www.amigos.com/{!!}
+- name: LatinAmericanCupidBR
+  url: https://www.latinamericancupid.com/pt/{!!}
+- name: BrazilCupid
+  url: https://www.brazilcupid.com/{!!}
+- name: AmoLatina
+  url: https://www.amolatina.com/{!!}
+- name: CaribbeanSingles
+  url: https://www.caribbeansingles.com/{!!}
+- name: DominicanDating
+  url: https://www.dominicandating.com/{!!}
+- name: SingleSlavic
+  url: https://www.singleslavic.com/{!!}
+- name: LoveSwans
+  url: https://www.loveswans.com/{!!}
+- name: AnastasiaDate
+  url: https://www.anastasiadate.com/{!!}
+- name: VictoriaHearts
+  url: https://www.victoriahearts.com/{!!}
+- name: RussianCupidRU
+  url: https://www.russiancupid.com/ru/{!!}
+- name: UkraineBrides
+  url: https://www.ukrainebridesagency.com/{!!}
+- name: UkraineDateRU
+  url: https://www.ukrainedate.com/ru/{!!}
+- name: LovePlanet
+  url: https://www.loveplanet.ru/{!!}
+- name: Mamba
+  url: https://www.mamba.ru/{!!}
+- name: Teamo
+  url: https://teamo.ru/{!!}
+- name: Wamba
+  url: https://www.wamba.com/{!!}
+- name: Eromance
+  url: https://www.eromance.com/{!!}
+- name: Dating.ru
+  url: https://www.dating.ru/{!!}
+- name: Lovoo
+  url: https://www.lovoo.com/{!!}
+- name: Jaumo
+  url: https://www.jaumo.com/{!!}
+- name: OnceDating
+  url: https://getonce.com/{!!}
+- name: HotOrNot
+  url: https://www.hotornot.com/{!!}
+- name: Waplog
+  url: https://www.waplog.com/{!!}
+- name: BadooRU
+  url: https://badoo.ru/{!!}
+- name: Mocospace
+  url: https://www.mocospace.com/{!!}
+- name: Twoo
+  url: https://www.twoo.com/{!!}
+- name: MeetMoi
+  url: https://www.meetmoi.com/{!!}
+- name: eLoveDates
+  url: https://www.elovedates.com/{!!}
+- name: DateHookup
+  url: https://www.datehookup.com/{!!}
+- name: FriendFinderAsia
+  url: https://www.friendfinderasia.com/{!!}
+- name: LoveAwake
+  url: https://www.loveawake.com/{!!}
+- name: LoveMeFree
+  url: https://www.lovemefree.com/{!!}
+- name: Cupid.com
+  url: https://www.cupid.com/{!!}
+- name: MySingleFriend
+  url: https://www.mysinglefriend.com/{!!}
+- name: DateMySchool
+  url: https://www.datemyschool.com/{!!}
+- name: PlentyDating
+  url: https://www.plentydating.com/{!!}
+- name: MeetRussianGirls
+  url: https://www.meetrussiangirls.com/{!!}
+- name: ThaiLoveLines
+  url: https://www.thailovelines.com/{!!}
+- name: TrulyFilipina
+  url: https://www.trulyfilipina.com/{!!}
+- name: ChristianConnection
+  url: https://www.christianconnection.com/{!!}
+- name: DateBritishGuys
+  url: https://www.datebritishguys.com/{!!}
+- name: DateBritishGirls
+  url: https://www.datebritishgirls.com/{!!}
+- name: MingleAround
+  url: https://www.minglearound.com/{!!}
+- name: MingleAll
+  url: https://www.mingleall.com/{!!}
+- name: MingleWorld
+  url: https://www.mingleworld.com/{!!}
+- name: LovesFlirt
+  url: https://www.lovesflirt.com/{!!}
+- name: LoveZone
+  url: https://www.lovezone.com/{!!}
+- name: QuickFlirt
+  url: https://www.quickflirt.com/{!!}
+- name: Flirt.com
+  url: https://www.flirt.com/{!!}
+- name: FlirtWith
+  url: https://www.flirtwith.com/{!!}
+- name: DateChat
+  url: https://www.datechat.com/{!!}
+- name: LoveChat
+  url: https://www.lovechat.com/{!!}
+- name: MeetChat
+  url: https://www.meetchat.com/{!!}
+- name: Stripchat
+  url: https://stripchat.com/{!!}
+- name: SkyPrivate
+  url: https://www.skyprivate.com/{!!}
+- name: Jerkmate
+  url: https://jerkmate.com/{!!}
+- name: LoyalFans
+  url: https://loyalfans.com/{!!}
+- name: FanCentro
+  url: https://fancentro.com/{!!}
+- name: Clips4Sale
+  url: https://www.clips4sale.com/studio/{!!}
+- name: IWantClips
+  url: https://iwantclips.com/store/{!!}
+- name: AVNStars
+  url: https://avn.com/stars/{!!}
+- name: BentBox
+  url: https://bentbox.co/{!!}
+- name: PocketStars
+  url: https://pocketstars.com/{!!}
+- name: Sexed
+  url: https://sexed.com/{!!}
+- name: Unlockd
+  url: https://unlockd.com/{!!}
+- name: ModelHub
+  url: https://www.modelhub.com/{!!}
+- name: PornStarPlatinum
+  url: https://www.pornstarplatinum.com/{!!}
+- name: FreeOnes
+  url: https://www.freeones.com/{!!}
+- name: Babestation
+  url: https://www.babestation.tv/{!!}
+- name: SouthernCharms
+  url: https://www.southern-charms.com/{!!}
+- name: NaughtyAmerica
+  url: https://tour.naughtyamerica.com/{!!}
+- name: Brazzers
+  url: https://www.brazzers.com/{!!}
+- name: RealityKings
+  url: https://www.realitykings.com/{!!}
+- name: Mofos
+  url: https://www.mofos.com/{!!}
+- name: TeamSkeet
+  url: https://www.teamskeet.com/{!!}
+- name: BangBros
+  url: https://www.bangbros.com/{!!}
+- name: DigitalPlayground
+  url: https://www.digitalplayground.com/{!!}
+- name: Kink
+  url: https://www.kink.com/{!!}
+- name: HardcoreGangbang
+  url: https://www.hardcoregangbang.com/{!!}
+- name: PublicDisgrace
+  url: https://www.publicdisgrace.com/{!!}
+- name: BoundGangBangs
+  url: https://www.boundgangbangs.com/{!!}
+- name: Hogtied
+  url: https://www.hogtied.com/{!!}
+- name: SexuallyBroken
+  url: https://www.sexuallybroken.com/{!!}
+- name: BrattyBunny
+  url: https://www.brattybunny.com/{!!}
+- name: FemdomEmpire
+  url: https://www.femdomempire.com/{!!}
+- name: FemdomPOV
+  url: https://www.femdompov.com/{!!}
+- name: TranzVR
+  url: https://www.tranzvr.com/{!!}
+- name: ShemaleYum
+  url: https://www.shemaleyum.com/{!!}
+- name: GroobyGirls
+  url: https://www.groobygirls.com/{!!}
+- name: TransAngels
+  url: https://www.transangels.com/{!!}
+- name: TSPlayground
+  url: https://www.tsplayground.com/{!!}
+- name: BobbiStarr
+  url: https://www.bobbistarr.com/{!!}
+- name: EvilAngel
+  url: https://www.evilangel.com/{!!}
+- name: JulesJordan
+  url: https://www.julesjordan.com/{!!}
+- name: Tushy
+  url: https://www.tushy.com/{!!}
+- name: Vixen
+  url: https://www.vixen.com/{!!}
+- name: Blacked
+  url: https://www.blacked.com/{!!}
+- name: Deeper
+  url: https://www.deeper.com/{!!}
+- name: MyLF
+  url: https://www.mylf.com/{!!}
+- name: MomsTeachSex
+  url: https://www.momsteachsex.com/{!!}
+- name: PropertySex
+  url: https://www.propertysex.com/{!!}
+- name: PureTaboo
+  url: https://www.puretaboo.com/{!!}
+- name: FamilyStrokes
+  url: https://www.familystrokes.com/{!!}
+- name: StepSiblingsCaught
+  url: https://www.stepsiblingscaught.com/{!!}
+- name: GirlsWay
+  url: https://www.girlsway.com/{!!}
+- name: WebYoung
+  url: https://www.webyoung.com/{!!}
+- name: GirlfriendsFilms
+  url: https://www.girlfriendsfilms.com/{!!}
+- name: LesbianX
+  url: https://www.lesbianx.com/{!!}
+- name: AllGirlMassage
+  url: https://www.allgirlmassage.com/{!!}
+- name: SweetHeartVideo
+  url: https://www.sweetheartvideo.com/{!!}
+- name: RealityDudes
+  url: https://www.realitydudes.com/{!!}
+- name: Men
+  url: https://www.men.com/{!!}
+- name: SeanCody
+  url: https://www.seancody.com/{!!}
+- name: RandyBlue
+  url: https://www.randyblue.com/{!!}
+- name: ChaosMen
+  url: https://www.chaosmen.com/{!!}
+- name: NextDoorStudios
+  url: https://www.nextdoorstudios.com/{!!}
+- name: FalconStudios
+  url: https://www.falconstudios.com/{!!}
+- name: RagingStallion
+  url: https://www.ragingstallion.com/{!!}
+- name: LucasEntertainment
+  url: https://www.lucasentertainment.com/{!!}
+- name: TreasureIslandMedia
+  url: https://www.treasureislandmedia.com/{!!}
+- name: KinkMen
+  url: https://www.kinkmen.com/{!!}
+- name: BoundInPublic
+  url: https://www.boundinpublic.com/{!!}
+- name: PornWorld
+  url: https://www.pornworld.com/{!!}
+- name: Private
+  url: https://www.private.com/{!!}
+- name: Dorcel
+  url: https://www.dorcel.com/{!!}
+- name: RealityLovers
+  url: https://www.realitylovers.com/{!!}
+- name: SexVR
+  url: https://www.sexvr.com/{!!}
+- name: VRBangers
+  url: https://www.vrbangers.com/{!!}
+- name: VirtualRealPorn
+  url: https://www.virtualrealporn.com/{!!}
+- name: CzechVR
+  url: https://www.czechvr.com/{!!}
+- name: BadoinkVR
+  url: https://www.badoinkvr.com/{!!}
+- name: KinkVR
+  url: https://www.kinkvr.com/{!!}
+- name: NaughtyVR
+  url: https://www.naughtyvr.com/{!!}
+- name: SexLikeReal
+  url: https://www.sexlikereal.com/{!!}
+- name: LustReality
+  url: https://www.lustreality.com/{!!}
+- name: PornDoePremium
+  url: https://www.porndoepremium.com/{!!}
+- name: YesPornPlease
+  url: https://www.yespornplease.to/{!!}
+- name: TXXX
+  url: https://www.txxx.com/{!!}
+- name: HQSex
+  url: https://www.hqsex.net/{!!}
+- name: Thumbzilla
+  url: https://www.thumbzilla.com/{!!}
+- name: KeezMovies
+  url: https://www.keezmovies.com/{!!}
+- name: TubeGalore
+  url: https://www.tubegalore.com/{!!}
+- name: xPeeps
+  url: https://www.xpeeps.com/{!!}
+- name: Cams
+  url: https://www.cams.com/{!!}
+- name: SkyCam
+  url: https://www.skycam.com/{!!}
+- name: CamSurf
+  url: https://www.camsurf.com/{!!}
+- name: Shagle
+  url: https://shagle.com/{!!}
+- name: OmeTV
+  url: https://ome.tv/{!!}
+- name: Flingster
+  url: https://flingster.com/{!!}
+- name: Chatrandom
+  url: https://chatrandom.com/{!!}
+- name: ChatAvenue
+  url: https://chat-avenue.com/{!!}
+- name: DirtyRoulette
+  url: https://dirtyroulette.com/{!!}
+- name: StripchatVR
+  url: https://www.stripchatvr.com/{!!}
+- name: FlirtyMania
+  url: https://flirtymania.com/{!!}
+- name: CamFuze
+  url: https://camfuze.com/{!!}
+- name: BimBim
+  url: https://www.bimbim.com/{!!}
+- name: Arousr
+  url: https://www.arousr.com/{!!}
+- name: CamsodaVR
+  url: https://www.camsodavr.com/{!!}
+- name: MyGirlFund
+  url: https://www.mygirlfund.com/{!!}
+- name: SextPanther
+  url: https://www.sextpanther.com/{!!}
+- name: NiteFlirt
+  url: https://www.niteflirt.com/{!!}
+- name: TalkToMe
+  url: https://www.talktome.com/{!!}
+- name: SextMe
+  url: https://www.sextme.com/{!!}
+- name: EroticMonkey
+  url: https://www.eroticmonkey.ch/{!!}
+- name: Slixa
+  url: https://www.slixa.com/{!!}
+- name: Tryst
+  url: https://tryst.link/{!!}
+- name: AdultWork
+  url: https://www.adultwork.com/{!!}
+- name: EscortAlligator
+  url: https://escortalligator.com/{!!}
+- name: CityXGuide
+  url: https://www.cityxguide.com/{!!}
+- name: Bedpage
+  url: https://www.bedpage.com/{!!}
+- name: Backpage
+  url: https://www.backpage.com/{!!}
+- name: OneBackPage
+  url: https://onebackpage.com/{!!}
+- name: SkipTheGames
+  url: https://www.skipthegames.com/{!!}
+- name: Eros
+  url: https://www.eros.com/{!!}
+- name: EuroGirlsEscort
+  url: https://www.eurogirlsescort.com/{!!}
+- name: EscortDirectory
+  url: https://www.escortdirectory.com/{!!}
+- name: EscortGuide
+  url: https://www.escort.guide/{!!}
+- name: HotEscort
+  url: https://www.hotesccort.com/{!!}
+- name: MassageRepublic
+  url: https://www.massagerepublic.com/{!!}
+- name: MassageFinder
+  url: https://www.massagefinder.com/{!!}
+- name: TheEroticReview
+  url: https://www.theeroticreview.com/{!!}
+- name: PunterNet
+  url: https://www.punternet.com/{!!}
+- name: RubMaps
+  url: https://www.rubmaps.ch/{!!}
+- name: SpaHunters
+  url: https://www.spahunters.com/{!!}
+- name: PornBB
+  url: https://www.pornbb.org/{!!}
+- name: PlanetSuzy
+  url: https://planetsuzy.org/{!!}
+- name: ViperGirls
+  url: https://vipergirls.to/{!!}
+- name: CamCaps
+  url: https://www.camcaps.net/{!!}
+- name: PornForum
+  url: https://pornforum.com/{!!}
+- name: Phun
+  url: https://www.phun.org/{!!}
+- name: AmateurPornForum
+  url: https://www.amateurpornforum.com/{!!}
+- name: NSFWChat
+  url: https://nsfw.chat/{!!}
+- name: EroChat
+  url: https://www.erochat.net/{!!}
+- name: FetLife
+  url: https://fetlife.com/users/{!!}
+- name: KinkyZoo
+  url: https://kinkyzoo.com/{!!}
+- name: BDSMcommunity
+  url: https://www.bdsmcommunity.com/{!!}
+- name: Alt
+  url: https://www.alt.com/{!!}
+- name: CollarSpace
+  url: https://www.collarspace.com/{!!}
+- name: SwingLifestyle
+  url: https://www.swinglifestyle.com/{!!}
+- name: Kasidie
+  url: https://www.kasidie.com/{!!}
+- name: SDC
+  url: https://www.sdc.com/{!!}
+- name: FriendFinderX
+  url: https://www.friendfinderx.com/{!!}
+- name: Passion
+  url: https://www.passion.com/{!!}
+- name: XMatch
+  url: https://www.xmatch.com/{!!}
+- name: BangPals
+  url: https://www.bangpals.com/{!!}
+- name: Shagbook
+  url: https://www.shagbook.com/{!!}
+- name: SexSearch
+  url: https://www.sexsearch.com/{!!}
+- name: GetItOn
+  url: https://www.getiton.com/{!!}
+- name: WellHello
+  url: https://www.wellhello.com/{!!}
+- name: MeetNFuck
+  url: https://www.meetnfuck.com/{!!}
+- name: VKontakte
+  url: https://vk.com/{!!}
+- name: Odnoklassniki
+  url: https://ok.ru/{!!}
+- name: MoiMir
+  url: https://my.mail.ru/{!!}
+- name: Weibo
+  url: https://weibo.com/{!!}
+- name: Baidu Tieba
+  url: https://tieba.baidu.com/home/main?un={!!}
+- name: Renren
+  url: http://www.renren.com/{!!}
+- name: Douban
+  url: https://www.douban.com/people/{!!}
+- name: Xiaohongshu
+  url: https://www.xiaohongshu.com/user/profile/{!!}
+- name: LINE Taiwan
+  url: https://line.me/{!!}
+- name: Mixi
+  url: https://mixi.jp/show_profile.pl?id={!!}
+- name: Cyworld
+  url: https://cyworld.com/{!!}
+- name: KakaoStory
+  url: https://story.kakao.com/{!!}
+- name: Band Korea
+  url: https://band.us/@{!!}
+- name: Ameba Japan
+  url: https://ameblo.jp/{!!}
+- name: GooBlog
+  url: https://blog.goo.ne.jp/{!!}
+- name: Hatena
+  url: https://profile.hatena.ne.jp/{!!}
+- name: Fotolog Brazil
+  url: https://fotolog.com/{!!}
+- name: Orkut India
+  url: https://orkut.com/{!!}
+- name: Hi5 Latin
+  url: https://hi5.com/{!!}
+- name: Sonico
+  url: https://www.sonico.com/{!!}
+- name: Netlog Belgium
+  url: https://www.netlog.com/{!!}
+- name: Lokalisten Germany
+  url: https://www.lokalisten.de/{!!}
+- name: StudiVZ
+  url: https://www.studivz.net/{!!}
+- name: MeinVZ
+  url: https://www.meinvz.net/{!!}
+- name: WerKenntWen
+  url: https://www.wer-kennt-wen.de/{!!}
+- name: IRC-Galleria Finland
+  url: https://irc-galleria.net/{!!}
+- name: Suomi24
+  url: https://www.suomi24.fi/{!!}
+- name: Glocals Switzerland
+  url: https://www.glocals.com/{!!}
+- name: Skyrock France
+  url: https://skyrock.com/{!!}
+- name: Copainsdavant
+  url: https://copainsdavant.linternaute.com/{!!}
+- name: Netby Sweden
+  url: https://www.netby.se/{!!}
+- name: Hamariweb Pakistan
+  url: https://www.hamariweb.com/{!!}
+- name: PakWheels Forum
+  url: https://www.pakwheels.com/forums/{!!}
+- name: Rozee Pakistan
+  url: https://www.rozee.pk/{!!}
+- name: Shaadi India
+  url: https://www.shaadi.com/{!!}
+- name: Mingle2 India
+  url: https://mingle2.com/{!!}
+- name: DesiMartini
+  url: https://www.desimartini.com/{!!}
+- name: Ibibo
+  url: https://www.ibibo.com/{!!}
+- name: Mozillians Bangladesh
+  url: https://mozillians.org/en-US/u/{!!}
+- name: BDJobs
+  url: https://www.bdjobs.com/{!!}
+- name: Bikroy Bangladesh
+  url: https://bikroy.com/{!!}
+- name: ClickBD
+  url: https://www.clickbd.com/{!!}
+- name: Priyo
+  url: https://www.priyo.com/{!!}
+- name: Cholti Kotha
+  url: https://www.choltikotha.com/{!!}
+- name: BDNews24 Profiles
+  url: https://bdnews24.com/{!!}
+- name: AmarDesh Bangladesh
+  url: https://amardesh.com/{!!}
+- name: Prothom Alo Blog
+  url: https://www.prothomalo.com/{!!}
+- name: Samakal Forum
+  url: https://www.samakal.com/{!!}
+- name: Rokomari
+  url: https://rokomari.com/{!!}
+- name: Adhunika
+  url: https://adhunika.org/{!!}
+- name: GaanBangla
+  url: https://www.gaanbangla.tv/{!!}
+- name: Daily Star Forum
+  url: https://www.thedailystar.net/{!!}
+- name: BD24Live
+  url: https://www.bd24live.com/{!!}
+- name: BDYouth
+  url: https://www.bdyouth.net/{!!}
+- name: LankaFriends
+  url: https://www.lankafriends.com/{!!}
+- name: Kapruka
+  url: https://www.kapruka.com/{!!}
+- name: Ikman.lk
+  url: https://ikman.lk/{!!}
+- name: MyLK
+  url: https://mylk.com/{!!}
+- name: E-Kadaster Netherlands
+  url: https://www.kadaster.nl/{!!}
+- name: Hyves
+  url: https://hyves.net/{!!}
+- name: Marktplaats
+  url: https://www.marktplaats.nl/{!!}
+- name: Vinden.nl
+  url: https://www.vinden.nl/{!!}
+- name: Tweedehands
+  url: https://www.tweedehands.be/{!!}
+- name: Kijiji Canada
+  url: https://www.kijiji.ca/{!!}
+- name: Younow Canada
+  url: https://www.younow.com/{!!}
+- name: Nexopia
+  url: https://www.nexopia.com/{!!}
+- name: ClubCooee Germany
+  url: https://www.clubcooee.com/{!!}
+- name: Spinchat Germany
+  url: https://www.spinchat.com/{!!}
+- name: Jappy Germany
+  url: https://www.jappy.de/{!!}
+- name: StayFriends Germany
+  url: https://www.stayfriends.de/{!!}
+- name: Yabiladi Morocco
+  url: https://www.yabiladi.com/{!!}
+- name: Avito Morocco
+  url: https://www.avito.ma/{!!}
+- name: MarocAnnonces
+  url: https://www.marocannonces.com/{!!}
+- name: Leboncoin France
+  url: https://www.leboncoin.fr/{!!}
+- name: Vivastreet France
+  url: https://www.vivastreet.com/{!!}
+- name: Ziki Ivory Coast
+  url: https://www.ziki.com/{!!}
+- name: MyGambia
+  url: https://www.mygambia.gm/{!!}
+- name: Jumia Nigeria
+  url: https://www.jumia.com.ng/{!!}
+- name: Nairaland
+  url: https://www.nairaland.com/{!!}
+- name: Konga Nigeria
+  url: https://www.konga.com/{!!}
+- name: ConnectNigeria
+  url: https://www.connectnigeria.com/{!!}
+- name: Eskimi Africa
+  url: https://www.eskimi.com/{!!}
+- name: Mxit South Africa
+  url: https://www.mxit.com/{!!}
+- name: Gumtree South Africa
+  url: https://www.gumtree.co.za/{!!}
+- name: OLX South Africa
+  url: https://www.olx.co.za/{!!}
+- name: Bidorbuy
+  url: https://www.bidorbuy.co.za/{!!}
+- name: Locanto South Africa
+  url: https://www.locanto.co.za/{!!}
+- name: Khojle India
+  url: https://www.khojle.in/{!!}
+- name: Quikr India
+  url: https://www.quikr.com/{!!}
+- name: OLX India
+  url: https://www.olx.in/{!!}
+- name: Sulekha India
+  url: https://www.sulekha.com/{!!}
+- name: ClickIndia
+  url: https://www.clickindia.com/{!!}
+- name: JustDial
+  url: https://www.justdial.com/{!!}
+- name: Locanto India
+  url: https://www.locanto.in/{!!}
+- name: Shiksha India
+  url: https://www.shiksha.com/{!!}
+- name: UrbanClap India
+  url: https://www.urbanclap.com/{!!}
+- name: Shadi.com
+  url: https://www.shadi.com/{!!}
+- name: MatrimonialsIndia
+  url: https://www.matrimonialsindia.com/{!!}
+- name: MeriJaan Pakistan
+  url: https://www.merijaan.com/{!!}
+- name: Hamrobazar Nepal
+  url: https://hamrobazar.com/{!!}
+- name: Merojob Nepal
+  url: https://merojob.com/{!!}
+- name: SastoDeal
+  url: https://sastodeal.com/{!!}
+- name: Daraz Nepal
+  url: https://www.daraz.com.np/{!!}
+- name: Daraz Pakistan
+  url: https://www.daraz.pk/{!!}
+- name: OLX Pakistan
+  url: https://www.olx.com.pk/{!!}
+- name: ApnaSpace Pakistan
+  url: https://www.apnaspace.com/{!!}
+- name: iBazar Pakistan
+  url: https://www.ibazar.pk/{!!}
+- name: ApniCiti Pakistan
+  url: https://www.apniciti.com/{!!}
+- name: Poshmark USA
+  url: https://poshmark.com/closet/{!!}
+- name: Mercari Japan
+  url: https://www.mercari.com/jp/u/{!!}
+- name: Rakuten Japan
+  url: https://www.rakuten.co.jp/{!!}
+- name: Yahoo Auctions Japan
+  url: https://auctions.yahoo.co.jp/seller/{!!}
+- name: Taobao China
+  url: https://world.taobao.com/{!!}
+- name: Alibaba China
+  url: https://www.alibaba.com/{!!}
+- name: 58.com China
+  url: https://www.58.com/{!!}
+- name: JD.com
+  url: https://www.jd.com/{!!}
+- name: Kaidee Thailand
+  url: https://www.kaidee.com/{!!}
+- name: Sanook Thailand
+  url: https://www.sanook.com/{!!}
+- name: Pantip Thailand
+  url: https://pantip.com/profile/{!!}
+- name: OLX Indonesia
+  url: https://www.olx.co.id/{!!}
+- name: Tokopedia Indonesia
+  url: https://www.tokopedia.com/{!!}
+- name: Bukalapak Indonesia
+  url: https://www.bukalapak.com/{!!}
+- name: Kaskus Indonesia
+  url: https://www.kaskus.co.id/{!!}
+- name: Blibli Indonesia
+  url: https://www.blibli.com/{!!}
+- name: Carousell Singapore
+  url: https://www.carousell.sg/{!!}
+- name: Gumtree Singapore
+  url: https://www.gumtree.sg/{!!}
+- name: Locanto Singapore
+  url: https://www.locanto.sg/{!!}
+- name: Mudah Malaysia
+  url: https://www.mudah.my/{!!}
+- name: Cari Malaysia
+  url: https://mforum.cari.com.my/{!!}
+- name: Lelong Malaysia
+  url: https://www.lelong.com.my/{!!}
+- name: Lowyat Malaysia
+  url: https://forum.lowyat.net/user/{!!}
+- name: OLX Philippines
+  url: https://www.olx.ph/{!!}
+- name: Carousell Philippines
+  url: https://www.carousell.ph/{!!}
+- name: Sulit Philippines
+  url: https://www.sulit.ph/{!!}
+- name: AyosDito Philippines
+  url: https://www.ayosdito.ph/{!!}
+- name: PinoyExchange
+  url: https://www.pinoyexchange.com/{!!}
+- name: Istorya Cebu
+  url: https://www.istorya.net/{!!}
+- name: Tsikot Forum
+  url: https://tsikot.com/{!!}
+- name: VivaStreet UK
+  url: https://www.vivastreet.co.uk/{!!}
+- name: Gumtree UK
+  url: https://www.gumtree.com/{!!}
+- name: Freeads UK
+  url: https://www.freeads.co.uk/{!!}
+- name: Preloved UK
+  url: https://www.preloved.co.uk/{!!}
+- name: Friday-Ad UK
+  url: https://www.friday-ad.co.uk/{!!}
+- name: Netmums UK
+  url: https://www.netmums.com/{!!}
+- name: Mumsnet UK
+  url: https://www.mumsnet.com/{!!}
+- name: TheStudentRoom UK
+  url: https://www.thestudentroom.co.uk/{!!}
+- name: TradeMe New Zealand
+  url: https://www.trademe.co.nz/{!!}
+- name: Neighbourly NZ
+  url: https://www.neighbourly.co.nz/{!!}
+- name: Sella NZ
+  url: https://www.sella.co.nz/{!!}
+- name: Fishpond NZ
+  url: https://www.fishpond.co.nz/{!!}
+- name: Realestate NZ
+  url: https://www.realestate.co.nz/{!!}
+- name: Finda NZ
+  url: https://www.finda.co.nz/{!!}
+- name: Yelp US
+  url: https://www.yelp.com/user_details?userid={!!}
+- name: Craigslist US
+  url: https://www.craigslist.org/u/{!!}
+- name: OfferUp US
+  url: https://offerup.com/p/{!!}
+- name: Letgo US
+  url: https://www.letgo.com/{!!}
+- name: Nextdoor US
+  url: https://nextdoor.com/profile/{!!}
+- name: CitySearch US
+  url: https://www.citysearch.com/profile/{!!}
+- name: AngiesList US
+  url: https://www.angieslist.com/profile/{!!}
+- name: Thumbtack US
+  url: https://www.thumbtack.com/{!!}
+- name: YellowPages US
+  url: https://www.yellowpages.com/person/{!!}
+- name: WhitePages US
+  url: https://www.whitepages.com/name/{!!}
+- name: TruePeopleSearch US
+  url: https://www.truepeoplesearch.com/resultname/{!!}
+- name: Spokeo US
+  url: https://www.spokeo.com/{!!}
+- name: Radaris US
+  url: https://radaris.com/p/{!!}
+- name: PeekYou US
+  url: https://www.peekyou.com/{!!}
+- name: Intelius US
+  url: https://www.intelius.com/people-search/{!!}
+- name: ZabaSearch US
+  url: https://www.zabasearch.com/people/{!!}
+- name: BeenVerified US
+  url: https://www.beenverified.com/people/{!!}
+- name: PeopleFinder US
+  url: https://www.peoplefinder.com/{!!}
+- name: Pipl US
+  url: https://pipl.com/{!!}
+- name: FastPeopleSearch US
+  url: https://www.fastpeoplesearch.com/{!!}
+- name: Clutch US
+  url: https://clutch.co/profile/{!!}
+- name: GoodFirms US
+  url: https://www.goodfirms.co/company/{!!}
+- name: Capterra US
+  url: https://www.capterra.com/p/{!!}
+- name: G2 US
+  url: https://www.g2.com/products/{!!}
+- name: Trustpilot Global
+  url: https://www.trustpilot.com/review/{!!}
+- name: SiteJabber Global
+  url: https://www.sitejabber.com/reviews/{!!}
+- name: MouthShut India
+  url: https://www.mouthshut.com/{!!}
+- name: ConsumerComplaints India
+  url: https://www.consumercomplaints.in/{!!}
+- name: RipoffReport Global
+  url: https://www.ripoffreport.com/reports/{!!}
+- name: ComplaintsBoard Global
+  url: https://www.complaintsboard.com/{!!}
+- name: BBB US
+  url: https://www.bbb.org/us/{!!}
+- name: Yelp AU
+  url: https://www.yelp.com.au/user_details?userid={!!}
+- name: Gumtree AU
+  url: https://www.gumtree.com.au/{!!}
+- name: Locanto AU
+  url: https://www.locanto.com.au/{!!}
+- name: TradingPost AU
+  url: https://www.tradingpost.com.au/{!!}
+- name: HotFrog AU
+  url: https://www.hotfrog.com.au/{!!}
+- name: Internet Archive
+  url: https://archive.org/search.php?query={!!}
+- name: Wayback Machine
+  url: https://web.archive.org/web/*/{!!}
+- name: Archive.today
+  url: https://archive.ph/{!!}
+- name: Archive.is
+  url: https://archive.is/{!!}
+- name: Archive.li
+  url: https://archive.li/{!!}
+- name: Archive.md
+  url: https://archive.md/{!!}
+- name: Archive.vn
+  url: https://archive.vn/{!!}
+- name: Library of Congress Digital
+  url: https://www.loc.gov/search/?q={!!}
+- name: British Library Digital Archive
+  url: https://www.bl.uk/catalogues-and-collections/{!!}
+- name: National Archives UK
+  url: https://discovery.nationalarchives.gov.uk/results/r?_q={!!}
+- name: National Archives USA
+  url: https://catalog.archives.gov/search?q={!!}
+- name: National Archives Australia
+  url: https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/SearchScreens/BasicSearch.aspx?query={!!}
+- name: Europeana
+  url: https://www.europeana.eu/en/search?page=1&query={!!}
+- name: Trove Australia
+  url: https://trove.nla.gov.au/search/category/all/{!!}
+- name: HathiTrust Digital Library
+  url: https://catalog.hathitrust.org/Search/Home?lookfor={!!}
+- name: Project Gutenberg
+  url: https://www.gutenberg.org/ebooks/search/?query={!!}
+- name: OpenLibrary
+  url: https://openlibrary.org/search?q={!!}
+- name: JSTOR Open Content
+  url: https://www.jstor.org/open/search?Query={!!}
+- name: CORE Research
+  url: https://core.ac.uk/search?q={!!}
+- name: arXiv
+  url: https://arxiv.org/search/?query={!!}
+- name: Zenodo
+  url: https://zenodo.org/search?page=1&size=20&q={!!}
+- name: Figshare
+  url: https://figshare.com/search?q={!!}
+- name: Dryad
+  url: https://datadryad.org/discover?filtertype_1=title&filter_relational_operator_1=contains&filter_1={!!}
+- name: SSRN
+  url: https://papers.ssrn.com/sol3/results.cfm?npage=1&txtKeywords={!!}
+- name: Semantic Scholar
+  url: https://www.semanticscholar.org/search?q={!!}
+- name: PubMed
+  url: https://pubmed.ncbi.nlm.nih.gov/?term={!!}
+- name: DOAJ
+  url: https://doaj.org/search/articles?ref=homepage-box&source={!!}
+- name: NASA ADS
+  url: https://ui.adsabs.harvard.edu/search/q={!!}
+- name: PLOS
+  url: https://journals.plos.org/plosone/search?q={!!}
+- name: BioRxiv
+  url: https://www.biorxiv.org/search/{!!}
+- name: MedRxiv
+  url: https://www.medrxiv.org/search/{!!}
+- name: ChemRxiv
+  url: https://chemrxiv.org/engage/api-gateway/chemrxiv/search?query={!!}
+- name: SSRN Working Papers
+  url: https://papers.ssrn.com/sol3/results.cfm?txtKeywords={!!}
+- name: DBLP Computer Science Bibliography
+  url: https://dblp.org/search?q={!!}
+- name: OSF (Open Science Framework)
+  url: https://osf.io/search/?q={!!}
+- name: ICPSR Data Archive
+  url: https://www.icpsr.umich.edu/web/pages/ICPSR/studies?q={!!}
+- name: Data.gov US
+  url: https://catalog.data.gov/dataset?q={!!}
+- name: Data.gov.uk
+  url: https://data.gov.uk/search?q={!!}
+- name: Data.gov.au
+  url: https://data.gov.au/search?q={!!}
+- name: Data.europa.eu
+  url: https://data.europa.eu/data/datasets?q={!!}
+- name: Wikileaks
+  url: https://search.wikileaks.org/?q={!!}
+- name: Cryptome
+  url: https://cryptome.org/guest-search?q={!!}
+- name: GlobaLeaks
+  url: https://globaleaks.org/search?q={!!}
+- name: Distributed Denial of Secrets
+  url: https://ddosecrets.com/wiki/{!!}
+- name: Ghostbin
+  url: https://ghostbin.com/u/{!!}
+- name: PrivateBin
+  url: https://privatebin.net/?search={!!}
+- name: FriendPaste
+  url: https://friendpaste.com/{!!}
+- name: Hastebin
+  url: https://hastebin.com/{!!}
+- name: 0bin
+  url: https://0bin.net/{!!}
+- name: AnonPaste
+  url: https://anonpaste.org/{!!}
+- name: Ideone
+  url: https://ideone.com/{!!}
+- name: GitHub Gist
+  url: https://gist.github.com/{!!}
+- name: GitLab Snippets
+  url: https://gitlab.com/{!!}/snippets
+- name: Bitbucket Snippets
+  url: https://bitbucket.org/{!!}/workspace/snippets
+- name: Kaggle Datasets
+  url: https://www.kaggle.com/{!!}
+- name: Zenodo Communities
+  url: https://zenodo.org/communities/{!!}
+- name: Harvard Dataverse
+  url: https://dataverse.harvard.edu/dataverse/{!!}
+- name: Figshare Collections
+  url: https://figshare.com/collections/{!!}
+- name: OSF Projects
+  url: https://osf.io/{!!}
+- name: DataHub
+  url: https://datahub.io/{!!}
+- name: CKAN Demo
+  url: https://demo.ckan.org/dataset/{!!}
+- name: OpenICPSR
+  url: https://www.openicpsr.org/openicpsr/search?q={!!}
+- name: Re3data
+  url: https://www.re3data.org/search?q={!!}
+- name: Mendeley Data
+  url: https://data.mendeley.com/datasets?query={!!}
+- name: EUDAT B2Share
+  url: https://b2share.eudat.eu/search?q={!!}
+- name: NOAA Data
+  url: https://www.ncei.noaa.gov/access/search-service/api/v1/search?query={!!}
+- name: USGS ScienceBase
+  url: https://www.sciencebase.gov/catalog/items?q={!!}
+- name: UN Data
+  url: https://data.un.org/Search.aspx?q={!!}
+- name: World Bank Data
+  url: https://data.worldbank.org/search?q={!!}
+- name: IMF Data
+  url: https://data.imf.org/?sk=388DFA60-1D26-4ADE-B505-A05A558D9A42&q={!!}
+- name: WHO Data
+  url: https://www.who.int/data/gho/search?q={!!}
+- name: OECD Data
+  url: https://data.oecd.org/searchresults/?q={!!}
+- name: WTO Data
+  url: https://data.wto.org/search?query={!!}
+- name: FAO Data
+  url: https://www.fao.org/faostat/en/#search/{!!}
+- name: ILO Data
+  url: https://ilostat.ilo.org/search/?q={!!}
+- name: UNHCR Data
+  url: https://data.unhcr.org/en/search?q={!!}
+- name: ReliefWeb
+  url: https://reliefweb.int/search?q={!!}
+- name: Humanitarian Data Exchange
+  url: https://data.humdata.org/dataset?q={!!}
+- name: Wikidata
+  url: https://www.wikidata.org/wiki/Special:Search?search={!!}
+- name: Wikipedia Dumps
+  url: https://dumps.wikimedia.org/{!!}
+- name: MediaWiki Dumps
+  url: https://www.mediawiki.org/wiki/Special:Search?search={!!}
+- name: Reddit Data Dumps
+  url: https://datasets.reddit.com/{!!}
+- name: Pushshift Reddit Search
+  url: https://redditsearch.io/?term={!!}
+- name: Stack Exchange Data Dump
+  url: https://archive.org/details/stackexchange?q={!!}
+- name: Quora Data Dumps
+  url: https://archive.org/search.php?query=quora%20{!!}
+- name: Twitter Data Archive
+  url: https://archive.org/search.php?query=twitter%20{!!}
+- name: Facebook Public Dumps
+  url: https://archive.org/search.php?query=facebook%20{!!}
+- name: YouTube Data Dumps
+  url: https://archive.org/search.php?query=youtube%20{!!}
+- name: TikTok Data Dumps
+  url: https://archive.org/search.php?query=tiktok%20{!!}
+- name: Instagram Data Dumps
+  url: https://archive.org/search.php?query=instagram%20{!!}
+- name: LinkedIn Data Dumps
+  url: https://archive.org/search.php?query=linkedin%20{!!}
+- name: MySpace Archive
+  url: https://archive.org/details/myspace?q={!!}
+- name: Flickr Commons Archive
+  url: https://www.flickr.com/search/?text={!!}
+- name: DeviantArt Archive
+  url: https://www.deviantart.com/search?q={!!}
+- name: Pinterest Archive
+  url: https://www.pinterest.com/search/pins/?q={!!}
+- name: Tumblr Archive
+  url: https://www.tumblr.com/search/{!!}
+- name: SoundCloud Archive
+  url: https://soundcloud.com/search?q={!!}
+- name: Mixcloud Archive
+  url: https://www.mixcloud.com/discover/{!!}
+- name: Bandcamp Archive
+  url: https://bandcamp.com/search?q={!!}
+- name: Spotify Archive
+  url: https://open.spotify.com/search/{!!}
+- name: Apple Music Archive
+  url: https://music.apple.com/search?term={!!}
+- name: Last.fm Archive
+  url: https://www.last.fm/search?q={!!}
+- name: Discogs Archive
+  url: https://www.discogs.com/search/?q={!!}
+- name: IMDb Archive
+  url: https://www.imdb.com/find?q={!!}
+- name: Rotten Tomatoes Archive
+  url: https://www.rottentomatoes.com/search?search={!!}
+- name: Letterboxd Archive
+  url: https://letterboxd.com/search/{!!}
+- name: Goodreads Archive
+  url: https://www.goodreads.com/search?q={!!}
+- name: Google Books
+  url: https://books.google.com/books?q={!!}
+- name: Amazon Books Archive
+  url: https://www.amazon.com/s?k={!!}
+- name: eBay Archive
+  url: https://www.ebay.com/sch/i.html?_nkw={!!}
+- name: Craigslist Archive
+  url: https://archive.org/search.php?query=craigslist%20{!!}
+- name: Etsy Archive
+  url: https://www.etsy.com/search?q={!!}
+- name: Shopify Stores Archive
+  url: https://archive.org/search.php?query=shopify%20{!!}
+- name: AliExpress Archive
+  url: https://www.aliexpress.com/wholesale?SearchText={!!}
+- name: Alibaba Archive
+  url: https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&SearchText={!!}
+- name: DHgate Archive
+  url: https://www.dhgate.com/wholesale/search.do?searchkey={!!}
+- name: Taobao Archive
+  url: https://world.taobao.com/search/search.htm?q={!!}
+- name: Tmall Archive
+  url: https://www.tmall.com/search_product.htm?q={!!}
+- name: Pinduoduo Archive
+  url: https://mobile.yangkeduo.com/search_result.html?search_key={!!}
+- name: Shopee Archive
+  url: https://shopee.com/search?keyword={!!}
+- name: Lazada Archive
+  url: https://www.lazada.com.ph/catalog/?q={!!}
+- name: Flipkart Archive
+  url: https://www.flipkart.com/search?q={!!}
+- name: Snapdeal Archive
+  url: https://www.snapdeal.com/search?keyword={!!}
+- name: Myntra Archive
+  url: https://www.myntra.com/{!!}
+- name: OLX Archive
+  url: https://www.olx.com/search?q={!!}
+- name: Gumtree Archive
+  url: https://www.gumtree.com/search?q={!!}
+- name: Facebook Marketplace Archive
+  url: https://www.facebook.com/marketplace/search/?query={!!}
+- name: Letgo Archive
+  url: https://www.letgo.com/en/search?q={!!}
+- name: OfferUp Archive
+  url: https://offerup.com/search/?q={!!}
+- name: Carousell Archive
+  url: https://www.carousell.sg/search/{!!}
+- name: Mercari Archive
+  url: https://www.mercari.com/search/?keyword={!!}
+- name: Vinted Archive
+  url: https://www.vinted.com/catalog?search_text={!!}
+- name: Depop Archive
+  url: https://www.depop.com/search/?q={!!}
+- name: Grailed Archive
+  url: https://www.grailed.com/search/{!!}
+- name: StockX Archive
+  url: https://stockx.com/search?s={!!}
+- name: GOAT Archive
+  url: https://www.goat.com/search?query={!!}
+- name: Flight Club Archive
+  url: https://www.flightclub.com/catalogsearch/result/?q={!!}
+- name: Stadium Goods Archive
+  url: https://www.stadiumgoods.com/catalogsearch/result/?q={!!}
+- name: BleepingComputer Breach Archive
+  url: https://www.bleepingcomputer.com/search/?q={!!}
+- name: HaveIBeenPwned
+  url: https://haveibeenpwned.com/account/{!!}
+- name: DeHashed
+  url: https://www.dehashed.com/search?query={!!}
+- name: Snusbase
+  url: https://snusbase.com/search?q={!!}
+- name: WeLeakInfo (Mirror)
+  url: https://weleakinfo.to/search?query={!!}
+- name: LeakCheck
+  url: https://leakcheck.io/search?query={!!}
+- name: Leak-Lookup
+  url: https://leak-lookup.com/search?query={!!}
+- name: Citadel Leaks
+  url: https://citadelleaks.com/search?query={!!}
+- name: GhostProject
+  url: https://ghostproject.fr/search?query={!!}
+- name: LeakedSource (Archive)
+  url: https://archive.org/search.php?query=leakedsource%20{!!}
+- name: BreachDirectory
+  url: https://breachdirectory.org/?search={!!}
+- name: PasswordLeak
+  url: https://passwordleak.com/?q={!!}
+- name: OpenBugBounty Reports
+  url: https://www.openbugbounty.org/search/?search={!!}
+- name: ExploitDB Archive
+  url: https://www.exploit-db.com/search?q={!!}
+- name: Vulners Archive
+  url: https://vulners.com/search?query={!!}
+- name: CXSecurity Archive
+  url: https://cxsecurity.com/search/wlb/{!!}
+- name: PacketStorm Security Archive
+  url: https://packetstormsecurity.com/search/?q={!!}
+- name: FullDisclosure Archive
+  url: https://seclists.org/fulldisclosure/{!!}
+- name: SecurityFocus BugTraq Archive
+  url: https://seclists.org/bugtraq/{!!}
+- name: NVD Vulnerabilities
+  url: https://nvd.nist.gov/vuln/search/results?query={!!}
+- name: MITRE CVE Archive
+  url: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword={!!}
+- name: VirusShare
+  url: https://virusshare.com/search?q={!!}
+- name: Hybrid Analysis
+  url: https://www.hybrid-analysis.com/search?query={!!}
+- name: AnyRun Malware Archive
+  url: https://any.run/malware-trends?q={!!}
+- name: MalShare
+  url: https://malshare.com/search.php?query={!!}
+- name: MalwareBazaar
+  url: https://bazaar.abuse.ch/browse.php?search={!!}
+- name: VirusTotal
+  url: https://www.virustotal.com/gui/search/{!!}
+- name: ThreatCrowd
+  url: https://www.threatcrowd.org/searchApi/v2/domain/report/?domain={!!}
+- name: ThreatMiner
+  url: https://www.threatminer.org/host.php?q={!!}
+- name: BinaryEdge
+  url: https://app.binaryedge.io/services/query?query={!!}
+- name: Onyphe
+  url: https://www.onyphe.io/search/?query={!!}
+- name: GreyNoise
+  url: https://viz.greynoise.io/query?gnql={!!}
+- name: Fofa
+  url: https://fofa.info/result?qbase64={!!}
+- name: CriminalIP
+  url: https://www.criminalip.io/asset/domain/{!!}
+- name: BreachAlarm
+  url: https://breachalarm.com/search/{!!}
+- name: LeakWatch
+  url: https://leakwatch.io/search?query={!!}
+- name: Insecam
+  url: https://www.insecam.org/en/byname/{!!}
+- name: PublicWWW
+  url: https://publicwww.com/websites/{!!}
+- name: BuiltWith Archive
+  url: https://builtwith.com/{!!}
+- name: Netcraft Site Report
+  url: https://sitereport.netcraft.com/?url={!!}
+- name: WhoisXML API
+  url: https://whoisxmlapi.com/search?query={!!}
+- name: ViewDNS Info
+  url: https://viewdns.info/reversewhois/?q={!!}
+- name: Spyse (Mirror)
+  url: https://spyse.com/search?query={!!}
+- name: C99 Shell Leaks
+  url: https://c99shell.pw/search?q={!!}
+- name: Carders.cc Dumps
+  url: https://carders.cc/search?q={!!}
+- name: DarkWeb Paste Dumps
+  url: https://darkwebpaste.com/search?q={!!}
+- name: TorPaste Dumps
+  url: https://torpaste.com/{!!}
+- name: OnionShare Leaks
+  url: https://onionshare.org/{!!}
+- name: Dark.fail Index
+  url: https://dark.fail/search?q={!!}
+- name: Ahmia
+  url: https://ahmia.fi/search/?q={!!}
+- name: Not Evil Dark Web Search
+  url: http://hss3uro2hsxfogfq.onion/?q={!!}
+- name: Haystak
+  url: https://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/search?q={!!}
+- name: Torch Dark Web Search
+  url: http://xmh57jrzrnw6insl.onion/cgi-bin/omega/omega?P={!!}
+- name: Phobos Dark Web Search
+  url: http://phobos5cquzix2o5.onion/search?q={!!}
+- name: DarkSearch
+  url: https://darksearch.io/search?q={!!}
+- name: DarkWeb Forum Dumps
+  url: https://darkwebforum.com/search?q={!!}

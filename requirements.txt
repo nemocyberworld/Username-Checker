@@ -1,0 +1,6 @@
+# Requirements for username-checker
+# Install with: pip install -r requirements.txt
+
+requests>=2.31.0     # HTTP requests with retry and proxy support
+PyYAML>=6.0          # Load and parse sites.yml and headers.yml
+colorama>=0.4.6      # (Optional) Cross-platform colored terminal output
