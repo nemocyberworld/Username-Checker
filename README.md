@@ -137,6 +137,6 @@ MIT License – free to use, modify, and distribute.
 
 ## ✨ Credits
 
-Developed by **HackToLive Academy** community.
+Developed by [**HackToLive Academy**](https://academy.hacktolive.net/) community.
 
 ---
